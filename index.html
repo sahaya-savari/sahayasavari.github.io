@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Santhosh | Blog</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <div class="layout">
 
+  <!-- ===== Sidebar ===== -->
   <aside class="sidebar">
     <h1>Santhosh</h1>
     <p>Learning AI & Python</p>
@@ -16,28 +18,58 @@
     <a href="#">Blog</a>
     <a href="#">Notes</a>
     <a href="#">About</a>
+
+    <button id="themeToggle">Toggle Theme</button>
   </aside>
 
+  <!-- ===== Main Content ===== -->
   <main class="main">
-    <h2>Blog</h2>
-    <p class="subtitle">Notes from my learning journey in AI and Python.</p>
 
+    <h2>Blog</h2>
+    <p class="subtitle">
+      Notes from my learning journey in AI, Python, and problem solving.
+    </p>
+
+    <!-- ===== Blog Post Card ===== -->
     <div class="post-card">
       <h3>
         <a href="posts/first-post.html">
-          Understanding Machine Learning (Beginner)
+          Understanding Machine Learning <span>(Beginner)</span>
         </a>
       </h3>
+
       <div class="meta">Dec 2024 · 5 min read</div>
+
       <p>
-        A simple explanation of machine learning concepts without heavy math.
+        A simple explanation of machine learning concepts, written in
+        my own words without heavy mathematics.
       </p>
     </div>
+
+    <!-- 👉 Copy this block to add more posts later -->
+    <!--
+    <div class="post-card">
+      <h3>
+        <a href="posts/second-post.html">Post Title</a>
+      </h3>
+      <div class="meta">Date · read time</div>
+      <p>Short description of the post.</p>
+    </div>
+    -->
 
   </main>
 
 </div>
 
+<!-- ===== Theme Toggle Script ===== -->
+<script>
+  const toggle = document.getElementById("themeToggle");
+  if (toggle) {
+    toggle.onclick = () => {
+      document.body.classList.toggle("light");
+    };
+  }
+</script>
+
 </body>
 </html>
-
