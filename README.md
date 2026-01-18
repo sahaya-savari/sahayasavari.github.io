@@ -33,11 +33,12 @@ No complex setup.
 
 ## 📂 Project Structure
 
-index.html        - Blog homepage  
-style.css         - Global styles  
-posts/            - Blog posts  
-  first-post.html - First article  
-README.md         - Project documentation  
+project-root/
+├── index.html        (Blog homepage)
+├── style.css         (Global styles)
+├── posts/
+│   └── first-post.html  (First article)
+└── README.md         (Project documentation)
 
 ---
 
