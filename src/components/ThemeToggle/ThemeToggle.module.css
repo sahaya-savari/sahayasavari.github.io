@@ -1,0 +1,40 @@
+/* Theme Toggle Button - Sun/Moon icons */
+.themeToggle {
+  background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--text-primary);
+  will-change: transform;
+}
+
+.themeToggle:hover {
+  background: var(--glass-hover-bg);
+  border-color: var(--accent-primary);
+  transform: scale(1.08) rotate(15deg);
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.themeToggle:hover .icon {
+  transform: rotate(180deg);
+}
+
+.themeToggle:active .icon {
+  transform: scale(0.9);
+}

@@ -1,55 +1,82 @@
-# 📘 Personal Learning Blog
+# 1. Verify you're in the correct repository
+git remote -v
 
-A clean, minimal blog built to document my learning journey in AI, Python, and Computer Science.
+# 2. Check status (already done above - you have changes ready)
+git status
 
-Live site:
-https://sahaya-savari.github.io
+# 3. Stage all changes
+git add .
+
+# 4. Commit with professional message
+git commit -m "Redesign: Modern glassmorphic UI with teal/cyan theme
+
+- Replaced red/orange accents with calm teal/cyan gradient
+- Optimized glassmorphism for 60 FPS performance
+- Added 6-card symmetry on Home page (Problem Solving, Research & Innovation)
+- Cleaned social section (removed Twitter, kept GitHub/LinkedIn/Portfolio)
+- Enhanced all components with consistent teal theme
+- Improved spacing and layout balance throughout
+- Updated navbar, footer, theme toggle with new aesthetic"
+
+# 5. Push to main branch
+git push origin main
+
+# 6. Verify successful push
+git log --oneline -1# Sahaya Savari — Personal Learning Blog
+
+A personal space for documenting continuous learning, breaking down concepts, and sharing practical technical insights.
+
+🌐 **Live Site:** https://sahaya-savari.github.io/
 
 ---
 
 ## 🎯 Purpose
 
-This repository is intentionally kept simple.
-
-The goals are:
-- to learn concepts deeply
-- to write explanations in my own words
-- to maintain a clean, professional portfolio
-- to grow the blog gradually over time
+This blog exists to:
+- Document continuous learning and growth in technology
+- Break down complex concepts into clear, digestible explanations
+- Share practical experiments and hands-on projects
+- Reflect on problem-solving approaches and lessons learned
 
 ---
 
-## 🛠 Tech Stack
+## 🧭 Focus Areas
 
-- HTML — semantic structure
-- CSS — modern UI (glassmorphism, sidebar layout, responsive design)
-- GitHub Pages — free hosting
+- **🤖 Artificial Intelligence & Machine Learning**  
+  Exploring core principles, frameworks, and real-world applications
 
-No frameworks.
-No libraries.
-No complex setup.
+- **💻 Programming Fundamentals**  
+  Applied practice in algorithms, data structures, and software design
 
----
+- **🛠️ Tools & Workflows**  
+  Notes on development practices, productivity, and learning systems
 
-## 📂 Project Structure
-
-project-root/
-├── index.html        (Blog homepage)
-├── style.css         (Global styles)
-├── posts/
-│   └── first-post.html   (First    article)
-└── README.md               (Project documentation)
+- **📝 Thoughtful Write-ups**  
+  Insights drawn from hands-on experience and real challenges
 
 ---
 
-## 📄 License & Usage
+## ✨ Design & Quality
 
-This project is for personal learning and documentation.
-
-All content is written in my own words and reflects my understanding at the time of writing.
+- Modern, clean, and responsive layout optimized for reading  
+- Comfortable typography for long-form content  
+- 🌙 Dark and ☀️ Light theme support  
+- Performance-friendly and accessibility-aware design
 
 ---
 
-## 🚀 Status
+## 👤 About the Author
 
-This blog is actively maintained and will be updated as I continue learning.
+**Sahaya Savari F**  
+MSc Artificial Intelligence student focused on building strong technical foundations through consistent practice and documentation.  
+I believe in learning by building and sharing knowledge openly.
+
+---
+
+## 🔗 Connect
+
+- **GitHub:** https://github.com/sahaya-savari  
+- **Portfolio:** https://sahayasavari.web.app  
+- **LinkedIn:** https://www.linkedin.com/in/sahayasavari  
+
+---

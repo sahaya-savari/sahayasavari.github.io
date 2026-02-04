@@ -1,0 +1,64 @@
+import { useParams, Link, Navigate } from 'react-router-dom';
+import { useMemo } from 'react';
+import DOMPurify from 'dompurify';
+import { getPostBySlug } from '../../data/blogPosts';
+import styles from './BlogPost.module.css';
+
+const BlogPost = () => {
+  const { slug } = useParams();
+  
+  // Validate slug parameter (alphanumeric and hyphens only)
+  const isValidSlug = useMemo(() => {
+    return slug && /^[a-z0-9-]+$/i.test(slug);
+  }, [slug]);
+
+  const post = useMemo(() => {
+    return isValidSlug ? getPostBySlug(slug) : null;
+  }, [slug, isValidSlug]);
+
+  // Sanitize HTML content to prevent XSS attacks
+  const sanitizedContent = useMemo(() => {
+    return post ? DOMPurify.sanitize(post.content) : '';
+  }, [post]);
+
+  // If post not found or invalid slug, redirect to blog list
+  if (!isValidSlug || !post) {
+    return <Navigate to="/blog" replace />;
+  }
+
+  return (
+    <div className={styles.blogPost}>
+      <div className="container-narrow">
+        {/* Back Link */}
+        <Link to="/blog" className={styles.backLink}>
+          ← Back to Blog
+        </Link>
+
+        {/* Article Header */}
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1 className={styles.title}>{post.title}</h1>
+            <div className={styles.meta}>
+              <time className={styles.date}>{post.date}</time>
+            </div>
+          </header>
+
+          {/* Article Content - Sanitized to prevent XSS */}
+          <div 
+            className={`glass-card ${styles.content}`}
+            dangerouslySetInnerHTML={{ __html: sanitizedContent }}
+          />
+        </article>
+
+        {/* Navigation to other posts */}
+        <div className={styles.postNavigation}>
+          <Link to="/blog" className="btn">
+            View All Posts
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default BlogPost;

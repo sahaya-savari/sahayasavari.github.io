@@ -1,0 +1,41 @@
+/* Layout with sidebar */
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.mainWrapper {
+  flex: 1;
+  margin-left: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .mainWrapper {
+    margin-left: 0;
+  }
+
+  .main {
+    padding: 5rem 2rem 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .main {
+    padding: 5rem 1.5rem 2rem;
+  }
+}
