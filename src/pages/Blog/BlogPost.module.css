@@ -1,7 +1,22 @@
-/* Individual Blog Post Styles - Optimized for reading */
 .blogPost {
   padding: 2rem 0;
   min-height: 60vh;
+}
+
+.blogPost[data-category="python"] {
+  --post-accent: var(--cat-python);
+}
+
+.blogPost[data-category="github"] {
+  --post-accent: var(--cat-github);
+}
+
+.blogPost[data-category="react"] {
+  --post-accent: var(--cat-react);
+}
+
+.blogPost[data-category="programming"] {
+  --post-accent: var(--cat-prog);
 }
 
 /* Back Link */
@@ -17,7 +32,8 @@
 }
 
 .backLink:hover {
-  color: var(--accent-primary);
+  color: var(--post-accent, var(--accent-primary));
+  transform: translateX(-5px);
 }
 
 /* Article Container */
@@ -28,9 +44,9 @@
 /* Article Header */
 .header {
   text-align: center;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--glass-border);
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--post-accent, var(--glass-border));
 }
 
 .title {
@@ -49,9 +65,11 @@
 }
 
 .date {
-  color: var(--text-muted);
+  color: var(--post-accent, var(--text-muted));
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 /* Article Content - Optimized Reading Experience */

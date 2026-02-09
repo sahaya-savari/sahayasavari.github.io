@@ -19,7 +19,7 @@ const BlogList = () => {
         {/* Blog Topics Grid */}
         <div className={styles.postsContainer}>
           <ScrollReveal delay={100}>
-            <Link to="/blog/python" className={styles.topicCard}>
+            <Link to="/blog/python" className={styles.topicCard} data-category="python">
               <div className={styles.topicIcon}>🐍</div>
               <h2 className={styles.topicTitle}>Python & AI</h2>
               <p className={styles.topicDescription}>
@@ -36,7 +36,7 @@ const BlogList = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={200}>
-            <Link to="/blog/github" className={styles.topicCard}>
+            <Link to="/blog/github" className={styles.topicCard} data-category="github">
               <div className={styles.topicIcon}>🛠️</div>
               <h2 className={styles.topicTitle}>GitHub Guide</h2>
               <p className={styles.topicDescription}>
@@ -53,7 +53,7 @@ const BlogList = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={300}>
-            <Link to="/blog/programming" className={styles.topicCard}>
+            <Link to="/blog/programming" className={styles.topicCard} data-category="programming">
               <div className={styles.topicIcon}>🗺️</div>
               <h2 className={styles.topicTitle}>Learning Path</h2>
               <p className={styles.topicDescription}>
@@ -70,7 +70,7 @@ const BlogList = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={400}>
-            <Link to="/blog/react" className={styles.topicCard}>
+            <Link to="/blog/react" className={styles.topicCard} data-category="react">
               <div className={styles.topicIcon}>⚛️</div>
               <h2 className={styles.topicTitle}>React & Web</h2>
               <p className={styles.topicDescription}>

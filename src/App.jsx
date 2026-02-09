@@ -3,7 +3,8 @@ import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home/Home';
 import BlogList from './pages/Blog/BlogList';
-import BlogTopicPage from './pages/Blog/BlogTopicPage';
+import BlogTopicPage from './pages/Blog/BlogTopicPage.jsx';
+import BlogPost from './pages/Blog/BlogPost.jsx';
 import About from './pages/About/About';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="/blog/python" element={<BlogTopicPage title="Python & AI" topicKey="python" description="Exploring Machine Learning, Data Science libraries, and core Python concepts." />} />
             <Route path="/blog/github" element={<BlogTopicPage title="GitHub Guide" topicKey="github" description="Essential guide to version control, repository management, and collaboration." />} />
             <Route path="/blog/programming" element={<BlogTopicPage title="Learning Roadmap" topicKey="programming" description="Strategies and roadmaps for effectively learning to code as a beginner." />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </Layout>

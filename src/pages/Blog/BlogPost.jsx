@@ -6,7 +6,7 @@ import styles from './BlogPost.module.css';
 
 const BlogPost = () => {
   const { slug } = useParams();
-  
+
   // Validate slug parameter (alphanumeric and hyphens only)
   const isValidSlug = useMemo(() => {
     return slug && /^[a-z0-9-]+$/i.test(slug);
@@ -27,7 +27,7 @@ const BlogPost = () => {
   }
 
   return (
-    <div className={styles.blogPost}>
+    <div className={styles.blogPost} data-category={post.category}>
       <div className="container-narrow">
         {/* Back Link */}
         <Link to="/blog" className={styles.backLink}>
@@ -44,7 +44,7 @@ const BlogPost = () => {
           </header>
 
           {/* Article Content - Sanitized to prevent XSS */}
-          <div 
+          <div
             className={`glass-card ${styles.content}`}
             dangerouslySetInnerHTML={{ __html: sanitizedContent }}
           />

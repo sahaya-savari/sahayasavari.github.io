@@ -38,9 +38,26 @@
     overflow: hidden;
 }
 
+.postCard[data-category="python"] {
+    --card-accent: var(--cat-python);
+}
+
+.postCard[data-category="github"] {
+    --card-accent: var(--cat-github);
+}
+
+.postCard[data-category="react"] {
+    --card-accent: var(--cat-react);
+}
+
+.postCard[data-category="programming"] {
+    --card-accent: var(--cat-prog);
+}
+
 .postCard:hover {
-    border-color: var(--accent-primary);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--card-accent, var(--accent-primary));
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .postHeader {
@@ -49,7 +66,7 @@
 
 .date {
     font-size: 0.8125rem;
-    color: var(--text-muted);
+    color: var(--card-accent, var(--text-muted));
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -72,72 +89,25 @@
     margin-bottom: 2rem;
 }
 
-.expandedContent {
-    margin-top: 3rem;
-    padding-top: 3rem;
-    border-top: 1px solid var(--glass-border);
-    line-height: 1.8;
-    color: var(--text-primary);
-    animation: fadeIn 0.5s ease;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.expandedContent h1,
-.expandedContent h2,
-.expandedContent h3 {
-    margin-top: 2.5rem;
-    color: var(--text-primary);
-}
-
-.expandedContent p {
-    margin-bottom: 1.5rem;
-}
-
-.expandedContent code {
-    background: var(--bg-tertiary);
-    padding: 0.2rem 0.4rem;
-    border-radius: 6px;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9em;
-}
-
-.expandedContent pre {
-    background: var(--bg-tertiary);
-    padding: 1.5rem;
-    border-radius: 12px;
-    overflow-x: auto;
-    margin: 2rem 0;
-    border: 1px solid var(--glass-border);
-}
-
-.expandBtn {
+.viewPostBtn {
+    display: inline-block;
     font-family: 'Inter', sans-serif;
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     color: var(--text-primary);
-    padding: 1rem 2rem;
-    border-radius: 14px;
+    padding: 0.875rem 1.75rem;
+    border-radius: 12px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     backdrop-filter: blur(8px);
 }
 
-.expandBtn:hover {
+.viewPostBtn:hover {
     background: var(--glass-hover-bg);
-    border-color: var(--accent-primary);
-    transform: translateY(-2px);
+    border-color: var(--card-accent, var(--accent-primary));
+    color: var(--card-accent, var(--text-primary));
+    transform: translateX(5px);
 }
 
 @media (max-width: 768px) {

@@ -45,10 +45,26 @@
   overflow: hidden;
 }
 
+.topicCard[data-category="python"] {
+  --card-accent: var(--cat-python);
+}
+
+.topicCard[data-category="github"] {
+  --card-accent: var(--cat-github);
+}
+
+.topicCard[data-category="react"] {
+  --card-accent: var(--cat-react);
+}
+
+.topicCard[data-category="programming"] {
+  --card-accent: var(--cat-prog);
+}
+
 .topicCard:hover {
   transform: translateY(-8px);
-  border-color: var(--accent-primary);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--card-accent, var(--accent-primary));
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .topicIcon {
@@ -79,11 +95,11 @@
 
 .viewBtn {
   font-weight: 600;
-  color: var(--accent-primary);
+  color: var(--card-accent, var(--accent-primary));
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  transition: gap 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .topicCard:hover .viewBtn {

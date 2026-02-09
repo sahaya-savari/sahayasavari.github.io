@@ -171,6 +171,12 @@ a:not(.btn):not([class*="Link"]):hover::after {
 
   --glass-hover-bg: hsla(171, 77%, 40%, 0.06);
   --glass-hover-border: hsla(171, 77%, 40%, 0.3);
+
+  /* Category Theming */
+  --cat-python: hsl(160, 80%, 45%);
+  --cat-github: hsl(217, 91%, 60%);
+  --cat-react: hsl(193, 95%, 45%);
+  --cat-prog: hsl(271, 81%, 65%);
 }
 
 :root[data-theme="light"] {
@@ -196,6 +202,12 @@ a:not(.btn):not([class*="Link"]):hover::after {
 
   --glass-hover-bg: hsla(171, 77%, 40%, 0.06%);
   --glass-hover-border: hsla(171, 77%, 40%, 0.3%);
+
+  /* Category Theming */
+  --cat-python: hsl(160, 80%, 35%);
+  --cat-github: hsl(217, 91%, 50%);
+  --cat-react: hsl(193, 95%, 40%);
+  --cat-prog: hsl(271, 81%, 55%);
 }
 
 body {

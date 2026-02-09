@@ -1,20 +1,14 @@
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { blogPosts } from '../../data/blogPosts';
 import styles from './BlogTopicPage.module.css';
 
 const BlogTopicPage = ({ title, topicKey, description }) => {
-    const [expandedSlug, setExpandedSlug] = useState(null);
-
     // Filter posts based on the topicKey
     const posts = blogPosts.filter(post =>
         post.title.toLowerCase().includes(topicKey.toLowerCase()) ||
         post.slug.toLowerCase().includes(topicKey.toLowerCase()) ||
         post.content.toLowerCase().includes(topicKey.toLowerCase())
     );
-
-    const toggleExpand = (slug) => {
-        setExpandedSlug(expandedSlug === slug ? null : slug);
-    };
 
     return (
         <div className={styles.blogTopicPage}>
@@ -29,7 +23,11 @@ const BlogTopicPage = ({ title, topicKey, description }) => {
                 <div className={styles.postsGrid}>
                     {posts.length > 0 ? (
                         posts.map((post) => (
-                            <article key={post.slug} className={styles.postCard}>
+                            <article
+                                key={post.slug}
+                                className={styles.postCard}
+                                data-category={post.category}
+                            >
                                 <header className={styles.postHeader}>
                                     <time className={styles.date}>{post.date}</time>
                                     <h2 className={styles.postTitle}>{post.title}</h2>
@@ -37,19 +35,12 @@ const BlogTopicPage = ({ title, topicKey, description }) => {
 
                                 <p className={styles.excerpt}>{post.excerpt}</p>
 
-                                {expandedSlug === post.slug && (
-                                    <div
-                                        className={styles.expandedContent}
-                                        dangerouslySetInnerHTML={{ __html: post.content }}
-                                    />
-                                )}
-
-                                <button
-                                    className={styles.expandBtn}
-                                    onClick={() => toggleExpand(post.slug)}
+                                <Link
+                                    to={`/blog/${post.slug}`}
+                                    className={styles.viewPostBtn}
                                 >
-                                    {expandedSlug === post.slug ? 'Show Less' : 'Read Full Post →'}
-                                </button>
+                                    Read Full Post →
+                                </Link>
                             </article>
                         ))
                     ) : (
