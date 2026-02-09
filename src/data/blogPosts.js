@@ -1,52 +1,277 @@
 // Blog posts data - HTML content is sanitized before rendering
 export const blogPosts = [
   {
-    slug: 'getting-started-with-react',
-    title: 'Getting Started with React',
-    date: 'January 15, 2026',
-    excerpt: 'A comprehensive guide to building modern web applications with React, covering components, hooks, and best practices.',
+    slug: 'python-programming-from-scratch-to-advanced',
+    title: 'Python Programming: From Scratch to Advanced',
+    date: 'February 9, 2026',
+    excerpt: 'A comprehensive Python tutorial covering basics to advanced concepts with examples.',
     content: `
-      <h2>Introduction to React</h2>
-      <p>React has revolutionized the way we build user interfaces. In this comprehensive guide, we'll explore the fundamentals of React and how to get started building modern web applications.</p>
-      
-      <h3>What is React?</h3>
-      <p>React is a JavaScript library for building user interfaces, developed and maintained by Facebook. It allows developers to create reusable UI components and manage application state efficiently.</p>
-      
-      <h3>Key Concepts</h3>
-      <p><strong>Components:</strong> The building blocks of React applications. Components are reusable pieces of UI that can be composed together to create complex interfaces.</p>
-      
-      <p><strong>JSX:</strong> A syntax extension that allows you to write HTML-like code in JavaScript. It makes component code more readable and expressive.</p>
-      
-      <p><strong>Props:</strong> Short for properties, props allow you to pass data from parent components to child components.</p>
-      
-      <p><strong>State:</strong> Local data that belongs to a component. When state changes, React automatically re-renders the component.</p>
-      
-      <h3>React Hooks</h3>
-      <p>Hooks are functions that let you use state and other React features in functional components. The most commonly used hooks are:</p>
-      
+      <h2>Introduction to Python Programming</h2>
+      <p>Python is an easy-to-learn, powerful programming language that is widely used in many fields like web development, data science, artificial intelligence, automation, etc. It is known for its simple syntax, readability, and versatility.</p>
+      <p><strong>Why Python?</strong></p>
       <ul>
-        <li><strong>useState:</strong> Manages local component state</li>
-        <li><strong>useEffect:</strong> Handles side effects like data fetching</li>
-        <li><strong>useContext:</strong> Accesses context values</li>
-        <li><strong>useRef:</strong> Creates mutable references</li>
+        <li><strong>Easy to learn:</strong> Python’s syntax is simple and easy to read, making it an ideal choice for beginners.</li>
+        <li><strong>Versatile:</strong> You can use Python for web development, data analysis, automation, machine learning, and much more.</li>
+        <li><strong>Huge Libraries:</strong> Python has a vast collection of libraries that make development faster and easier.</li>
       </ul>
-      
-      <h3>Best Practices</h3>
-      <p>When building React applications, keep these best practices in mind:</p>
-      
+
+      <h3>Python Installation</h3>
+      <p>To install Python on your computer:</p>
       <ol>
-        <li>Keep components small and focused on a single responsibility</li>
-        <li>Use functional components with hooks instead of class components</li>
-        <li>Lift state up when multiple components need access to the same data</li>
-        <li>Use keys when rendering lists to help React identify which items have changed</li>
-        <li>Optimize performance with React.memo and useMemo when necessary</li>
+        <li>Go to <a href="https://www.python.org/downloads/">python.org/downloads</a></li>
+        <li>Download the latest version.</li>
+        <li>Follow the installation instructions.</li>
       </ol>
-      
-      <h3>Conclusion</h3>
-      <p>React is a powerful tool for building modern web applications. By understanding its core concepts and following best practices, you can create efficient, maintainable, and scalable applications.</p>
+
+      <h3>Example Code: "Hello, World!"</h3>
+      <pre><code>print("Hello, World!")</code></pre>
+
+      <h2>Variables and Data Types in Python</h2>
+      <p>A variable is a name given to a memory location in Python that stores a value.</p>
+
+      <h3>Data Types in Python</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Data Type</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>int</td>
+            <td>Integer numbers (whole numbers)</td>
+            <td>x = 5</td>
+          </tr>
+          <tr>
+            <td>float</td>
+            <td>Floating-point numbers (decimals)</td>
+            <td>x = 5.7</td>
+          </tr>
+          <tr>
+            <td>str</td>
+            <td>String (text)</td>
+            <td>x = "Hello"</td>
+          </tr>
+          <tr>
+            <td>bool</td>
+            <td>Boolean (True or False)</td>
+            <td>x = True</td>
+          </tr>
+          <tr>
+            <td>list</td>
+            <td>Ordered collection of items (mutable)</td>
+            <td>x = [1, 2, 3]</td>
+          </tr>
+          <tr>
+            <td>tuple</td>
+            <td>Immutable collection of items</td>
+            <td>x = (1, 2, 3)</td>
+          </tr>
+          <tr>
+            <td>dict</td>
+            <td>Collection of key-value pairs</td>
+            <td>x = {"name": "John", "age": 30}</td>
+          </tr>
+          <tr>
+            <td>set</td>
+            <td>Collection of unique items</td>
+            <td>x = {1, 2, 3}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Example Code: Working with Variables and Data Types</h3>
+      <pre><code>
+# Assigning different data types to variables
+num = 10  # int
+pi = 3.14  # float
+name = "John"  # string
+is_active = True  # boolean
+
+# Using a list
+fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Output: apple
+
+# Using a tuple
+coordinates = (10, 20)
+print(coordinates[1])  # Output: 20
+
+# Using a dictionary
+person = {"name": "John", "age": 30}
+print(person["name"])  # Output: John
+
+# Using a set
+unique_numbers = {1, 2, 3, 3}
+print(unique_numbers)  # Output: {1, 2, 3} (no duplicates)
+</code></pre>
+
+      <h2>Control Flow Statements in Python</h2>
+      <p>Control flow statements help manage the flow of execution in a program. There are mainly conditional statements and looping statements.</p>
+
+      <h3>1. Conditional Statements: if, elif, else</h3>
+      <pre><code>
+age = 18
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+</code></pre>
+
+      <h3>2. Looping Statements: for, while</h3>
+      <p><strong>For Loop Syntax:</strong></p>
+      <pre><code>
+for item in iterable:
+    # execute this block
+</code></pre>
+      <p>Example:</p>
+      <pre><code>
+# Loop through a list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)
+</code></pre>
+
+      <p><strong>While Loop Syntax:</strong></p>
+      <pre><code>
+while condition:
+    # execute this block
+</code></pre>
+      <p>Example:</p>
+      <pre><code>
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+</code></pre>
+
+      <h3>3. Break and Continue</h3>
+      <pre><code>
+for i in range(10):
+    if i == 5:
+        break  # Stop the loop when i equals 5
+    print(i)
+</code></pre>
+
+      <h2>Functions in Python</h2>
+      <p>A function is a block of reusable code designed to perform a single task.</p>
+
+      <h3>Defining a Function</h3>
+      <pre><code>
+def function_name(parameters):
+    # function body
+    return result
+</code></pre>
+      <p>Example:</p>
+      <pre><code>
+# Function to add two numbers
+def add(x, y):
+    return x + y
+
+result = add(3, 5)
+print(result)  # Output: 8
+</code></pre>
+
+      <h3>Default Arguments</h3>
+      <pre><code>
+def greet(name="John"):
+    print(f"Hello, {name}!")
+
+greet()  # Output: Hello, John!
+greet("Alice")  # Output: Hello, Alice!
+</code></pre>
+
+      <h3>Variable-Length Arguments</h3>
+      <pre><code>
+def add_numbers(*args):
+    return sum(args)
+
+print(add_numbers(1, 2, 3, 4))  # Output: 10
+</code></pre>
+
+      <h2>Object-Oriented Programming (OOP)</h2>
+      <p>OOP allows you to structure your programs in terms of objects, which bundle data (attributes) and functions (methods) that operate on the data.</p>
+
+      <h3>1. Defining a Class</h3>
+      <pre><code>
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+</code></pre>
+
+      <h3>2. Creating an Object</h3>
+      <pre><code>
+person1 = Person("Alice", 25)
+person1.greet()  # Output: Hello, my name is Alice and I am 25 years old.
+</code></pre>
+
+      <h3>3. Inheritance</h3>
+      <pre><code>
+class Student(Person):
+    def __init__(self, name, age, student_id):
+        super().__init__(name, age)
+        self.student_id = student_id
+
+    def study(self):
+        print(f"{self.name} is studying.")
+
+student1 = Student("Bob", 21, "S12345")
+student1.greet()  # Inherited method
+student1.study()  # Method from Student class
+</code></pre>
+
+      <h2>Advanced Python Concepts</h2>
+      <p>Let’s explore some advanced Python topics.</p>
+
+      <h3>1. List Comprehensions</h3>
+      <pre><code>
+squares = [x**2 for x in range(10)]
+print(squares)  # Output: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+</code></pre>
+
+      <h3>2. Decorators</h3>
+      <pre><code>
+def decorator_func(func):
+    def wrapper():
+        print("Before function call")
+        func()
+        print("After function call")
+    return wrapper
+
+@decorator_func
+def say_hello():
+    print("Hello!")
+
+say_hello()
+# Output:
+# Before function call
+# Hello!
+# After function call
+</code></pre>
+
+      <h3>3. Generators</h3>
+      <pre><code>
+def generate_numbers():
+    for i in range(5):
+        yield i
+
+gen = generate_numbers()
+for number in gen:
+    print(number)
+# Output: 0 1 2 3 4
+</code></pre>
+
+      <h2>Conclusion</h2>
+      <p>This tutorial has covered the essentials of Python programming, starting from the basics to more advanced concepts. By practicing the examples and working on projects, you will become proficient in Python.</p>
     `
-  },
-  {
+  }
+];
+,{
     slug: 'machine-learning-basics',
     title: 'Machine Learning Basics',
     date: 'January 10, 2026',
