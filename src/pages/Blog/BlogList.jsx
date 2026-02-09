@@ -19,6 +19,13 @@ const BlogList = () => {
         {/* Blog Topics Grid */}
         {/* Choose a Topic */}
         <div className={styles.postsContainer}>
+              <Link to="/blog/python" className="glass-card" style={{ padding: '2.5rem', textAlign: 'center', flex: 1 }}>
+            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🐍</div>
+            <h2>Python & AI</h2>
+            <p style={{ margin: '1rem 0' }}>Machine Learning, Data, and Core Concepts</p>
+            <span className="btn">View Python Posts</span>
+          </Link>
+      
           <Link to="/blog/react" className="glass-card" style={{ padding: '2.5rem', textAlign: 'center', flex: 1 }}>
             <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>⚛️</div>
             <h2>React & Web Dev</h2>
@@ -26,12 +33,6 @@ const BlogList = () => {
             <span className="btn">View React Posts</span>
           </Link>
 
-          <Link to="/blog/python" className="glass-card" style={{ padding: '2.5rem', textAlign: 'center', flex: 1 }}>
-            <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🐍</div>
-            <h2>Python & AI</h2>
-            <p style={{ margin: '1rem 0' }}>Machine Learning, Data, and Core Concepts</p>
-            <span className="btn">View Python Posts</span>
-          </Link>
         </div>
       </div>
     </div>
