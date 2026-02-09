@@ -7,7 +7,7 @@ export const blogPosts = [
     date: 'February 10, 2026',
     excerpt: 'The definitive article-style guide for absolute beginners. Explore the why, what, and how of Python through a comprehensive 26-section journey.',
     content: `
-      <h2>1. Introduction to Programming 🧠</h2>
+      <h2 id="1-introduction-to-programming">1. Introduction to Programming 🧠</h2>
       <p>At its heart, <strong>Programming</strong> is nothing more than communication. Humans use languages like English or Spanish to share ideas; we use programming languages to give specific, logical instructions to a computer. 🟢</p>
       <h3>Why do we need it?</h3>
       <p>Computers are incredibly fast but they are not "smart" in the human sense. They cannot guess what you want. If you want a computer to calculate your taxes or generate a 3D world, you must provide a precise list of steps.</p>
@@ -19,7 +19,7 @@ export const blogPosts = [
       </ol>
       <p>Programming is the act of writing that "recipe" for a machine.</p>
 
-      <h2>2. What is Python 🐍</h2>
+      <h2 id="2-what-is-python">2. What is Python 🐍</h2>
       <p><strong>Python</strong> is a high-level, interpreted programming language created by Guido van Rossum in 1991. 🟢</p>
       <ul>
         <li><strong>High-Level:</strong> This means the language is far away from computer "machine code" (0s and 1s) and very close to human English.</li>
@@ -27,7 +27,7 @@ export const blogPosts = [
       </ul>
       <p>Python's philosophy focuses on <strong>readability</strong>. It uses simple keywords and clear structures so that even someone who doesn't code can often understand what a Python script is trying to do.</p>
 
-      <h2>3. Why Learn Python (Use Cases Table)</h2>
+      <h2 id="3-why-learn-python-use-cases-table">3. Why Learn Python (Use Cases Table)</h2>
       <p>Python is currently the most popular programming language in the world because it is a "Swiss Army Knife." It is used by NASA, Google, Netflix, and millions of small businesses. 🟢</p>
       <table>
         <thead>
@@ -61,7 +61,7 @@ export const blogPosts = [
         </tbody>
       </table>
 
-      <h2>4. Installing Python (Windows)</h2>
+      <h2 id="4-installing-python-windows">4. Installing Python (Windows)</h2>
       <p>To start writing code, your computer needs the "Python Interpreter"—the software that reads your text files and performs the actions. 🟢</p>
       <ol>
         <li>Visit the official <strong>python.org</strong> website.</li>
@@ -71,7 +71,7 @@ export const blogPosts = [
       </ol>
       <p>Once finished, restart your computer to ensure all settings take effect.</p>
 
-      <h2>5. Running Your First Python Program</h2>
+      <h2 id="5-running-your-first-python-program">5. Running Your First Python Program</h2>
       <p>In programming, the tradition is to start with a "Hello World" program. This simply proves that your setup is working. 🟢</p>
       <h3>Using the Terminal</h3>
       <p>Open <strong>PowerShell</strong> or <strong>Command Prompt</strong> on your Windows machine and type:</p>
@@ -86,7 +86,7 @@ export const blogPosts = [
         <li><code>"Hello, World!"</code>: This is a <a href="#7-variables-and-data-types">String</a> (text). We use quotes to tell Python "this is literally what I want you to read."</li>
       </ul>
 
-      <h2>6. Python Syntax Basics</h2>
+      <h2 id="6-python-syntax-basics">6. Python Syntax Basics</h2>
       <p><strong>Syntax</strong> refers to the rules of a language. If you break the syntax, the computer won't understand you, resulting in a "Syntax Error." 🟢</p>
       <h3>1. Indentation (The "Holy Grail" of Python)</h3>
       <p>Unlike other languages, Python uses spaces (4 spaces or 1 Tab) to group code blocks.</p>
@@ -98,7 +98,7 @@ print("This is also correct but outside the block.")</code></pre>
       <pre><code># This is a comment. Python won't run this.
 print("Hello") # This prints Hello</code></pre>
 
-      <h2>7. Variables and Data Types (Table)</h2>
+      <h2 id="7-variables-and-data-types-table">7. Variables and Data Types (Table)</h2>
       <p>In programming, you often need to remember information. We use <strong>Variables</strong>—think of them as labeled boxes where you store items. 🟢</p>
       <table>
         <thead>
@@ -132,7 +132,7 @@ print("Hello") # This prints Hello</code></pre>
         </tbody>
       </table>
 
-      <h2>8. Input and Output</h2>
+      <h2 id="8-input-and-output">8. Input and Output</h2>
       <p>Programs are only useful if they can interact with users. 🟢</p>
       <h3>Output (print)</h3>
       <p>We've already seen <code>print</code>. A professional way to include variables in text is using <strong>f-strings</strong>:</p>
@@ -144,7 +144,7 @@ print(f"Welcome to the blog, {name}!")</code></pre>
 print(f"Oh, I like {user_input} too!")</code></pre>
       <p><strong>Why it exists:</strong> It transforms a static script into an interactive experience.</p>
 
-      <h2>9. Operators (Arithmetic, Comparison, Logical)</h2>
+      <h2 id="9-operators-arithmetic-comparison-logical">9. Operators (Arithmetic, Comparison, Logical)</h2>
       <p>Operators are symbols used to perform math or logic. 🟢</p>
       <h3>1. Arithmetic Operators (Math)</h3>
       <table>
@@ -184,7 +184,7 @@ print(f"Oh, I like {user_input} too!")</code></pre>
         </tbody>
       </table>
 
-      <h2>10. Conditional Statements (if / elif / else)</h2>
+      <h2 id="10-conditional-statements-if-elif-else">10. Conditional Statements (if / elif / else)</h2>
       <p>This is how we give a program "intelligence." We use <code>if</code>, <code>elif</code> (else if), and <code>else</code>. 🟢</p>
       <pre><code>score = 85
 if score >= 90:
@@ -195,7 +195,7 @@ else:
     print("Keep studying!")</code></pre>
       <p><strong>Why it exists:</strong> Without conditions, every program would run the exact same way every time. Conditions allow for branching logic.</p>
 
-      <h2>11. Loops (for / while)</h2>
+      <h2 id="11-loops-for-while">11. Loops (for / while)</h2>
       <p><strong>Loops</strong> allow you to repeat a block of code multiple times without writing it over and over. 🟢</p>
       <h3>The for loop</h3>
       <p>Used when you know how many times to repeat.</p>
@@ -209,7 +209,7 @@ while count > 0:
     count = count - 1
 print("Blast off!")</code></pre>
 
-      <h2>12. Functions (Why they exist + how to use)</h2>
+      <h2 id="12-functions-why-they-exist-how-to-use">12. Functions (Why they exist + how to use)</h2>
       <p>A <strong>Function</strong> is a reusable packet of code. Instead of writing 20 lines of logic repeatedly, you wrap it in a function and "call" its name. 🟢</p>
       <pre><code>def make_coffee(flavor):
     print(f"Heating water...")
@@ -221,7 +221,7 @@ result = make_coffee("Vanilla")
 print(result)</code></pre>
       <p><strong>Why it exists:</strong> It makes code clean, reduces <a href="#16-error-handling">errors</a>, and saves time.</p>
 
-      <h2>13. Lists, Tuples, Sets, Dictionaries (Comparison Table)</h2>
+      <h2 id="13-lists-tuples-sets-dictionaries-comparison-table">13. Lists, Tuples, Sets, Dictionaries (Comparison Table)</h2>
       <p>Data structures are special variables that can hold many items at once. 🟢</p>
       <table>
         <thead>
@@ -255,14 +255,14 @@ print(result)</code></pre>
         </tbody>
       </table>
 
-      <h2>14. Strings (Common Operations)</h2>
+      <h2 id="14-strings-common-operations">14. Strings (Common Operations)</h2>
       <p>Since text is everywhere, Python has powerful tools just for <a href="#7-variables-and-data-types">Strings</a>. 🟢</p>
       <pre><code>text = "python programming"
 print(text.upper())      # PYTHON PROGRAMMING
 print(text.capitalize()) # Python programming
 print(len(text))         # 18</code></pre>
 
-      <h2>15. File Handling (Read / Write)</h2>
+      <h2 id="15-file-handling-read-write">15. File Handling (Read / Write)</h2>
       <p>Python can talk to your hard drive to read or write files. 🟢</p>
       <pre><code># Writing to a file
 with open("note.txt", "w") as file:
@@ -273,7 +273,7 @@ with open("note.txt", "r") as file:
     content = file.read()
     print(content)</code></pre>
 
-      <h2>16. Error Handling (try / except)</h2>
+      <h2 id="16-error-handling-try-except">16. Error Handling (try / except)</h2>
       <p>Even the best programmers make mistakes. <strong>Error Handling</strong> prevents your entire app from crashing when a problem occurs. 🟢</p>
       <pre><code>try:
     number = int(input("Enter a number: "))
@@ -284,25 +284,25 @@ except ZeroDivisionError:
 except ValueError:
     print("Error: That wasn't a valid number!")</code></pre>
 
-      <h2>17. Modules and Packages</h2>
+      <h2 id="17-modules-and-packages">17. Modules and Packages</h2>
       <p>You don't have to build everything from scratch. Python comes with "Modules"—pre-written code scripts. 🟢</p>
       <pre><code>import math
 import random
 print(math.sqrt(16))      # 4.0
 print(random.randint(1, 10))</code></pre>
 
-      <h2>18. Virtual Environments (Beginner Explanation)</h2>
+      <h2 id="18-virtual-environments-beginner-explanation">18. Virtual Environments (Beginner Explanation)</h2>
       <p>A <strong>Virtual Environment</strong> is a "bubble" or a private folder where you store only the tools needed for one specific project. This keeps your main computer system clean. 🟢</p>
       <pre><code>python -m venv my_project_env</code></pre>
 
-      <h2>19. Writing Clean Python Code (Best Practices)</h2>
+      <h2 id="19-writing-clean-python-code-best-practices">19. Writing Clean Python Code (Best Practices)</h2>
       <ul>
         <li><strong>Use Meaningful Names:</strong> <code>user_age</code> is better than <code>a</code>. 🟢</li>
         <li><strong>Space Things Out:</strong> Put spaces around <a href="#9-operators">Operators</a> (<code>x = 5</code>).</li>
         <li><strong>Snake Case:</strong> Use underscores for variable names.</li>
       </ul>
 
-      <h2>20. Common Beginner Mistakes ⚠️ (With Fixes)</h2>
+      <h2 id="20-common-beginner-mistakes-with-fixes">20. Common Beginner Mistakes ⚠️ (With Fixes)</h2>
       <table>
         <thead>
           <tr>
@@ -325,20 +325,20 @@ print(random.randint(1, 10))</code></pre>
         </tbody>
       </table>
 
-      <h2>21. Small Practice Examples</h2>
+      <h2 id="21-small-practice-examples">21. Small Practice Examples</h2>
       <pre><code># Simple Bill Calculator
 total = float(input("Bill: "))
 pax = int(input("People: "))
 print(f"Each pays: {total / pax}")</code></pre>
 
-      <h2>22. How to Practice Python Effectively</h2>
+      <h2 id="22-how-to-practice-python-effectively">22. How to Practice Python Effectively</h2>
       <ul>
         <li><strong>The 20-Minute Rule:</strong> Daily practice is 100x better than weekly marathons. 🟢</li>
         <li><strong>Build Projects:</strong> Don't just watch; try to build a small to-do list.</li>
         <li><strong>Explain it:</strong> Teach someone else what you just learned.</li>
       </ul>
 
-      <h2>23. Python Learning Roadmap 📌 (Beginner → Intermediate → Advanced Table)</h2>
+      <h2 id="23-python-learning-roadmap-beginner-intermediate-advanced-table">23. Python Learning Roadmap 📌 (Beginner → Intermediate → Advanced Table)</h2>
       <table>
         <thead>
           <tr>
@@ -366,17 +366,17 @@ print(f"Each pays: {total / pax}")</code></pre>
         </tbody>
       </table>
 
-      <h2>24. Tools for Python Developers</h2>
+      <h2 id="24-tools-for-python-developers">24. Tools for Python Developers</h2>
       <ul>
         <li><strong>VS Code:</strong> The most popular text editor for beginners. 🟢</li>
         <li><strong>Git:</strong> A tool to save versions and collaborate.</li>
         <li><strong>Pip:</strong> To install new Python libraries.</li>
       </ul>
 
-      <h2>25. Daily Python Practice Workflow</h2>
+      <h2 id="25-daily-python-practice-workflow">25. Daily Python Practice Workflow</h2>
       <p><code>Identify</code> → <code>Logic</code> → <code>Write</code> → <code>Debug</code> → <code>Refactor</code> 🟢</p>
 
-      <h2>26. Conclusion 🎯</h2>
+      <h2 id="26-conclusion">26. Conclusion 🎯</h2>
       <p>You have just completed the ultimate foundation for Python programming. Practice these 26 sections, stay curious, and go build something! 🟢</p>
     `
   },
@@ -387,12 +387,12 @@ print(f"Each pays: {total / pax}")</code></pre>
     date: 'February 10, 2026',
     excerpt: 'The ultimate long-form guide to version control for absolute beginners. Master Git and GitHub through 26 detailed sections with real-world logic.',
     content: `
-      <h2>1. Introduction to Version Control 🧠</h2>
+      <h2 id="1-introduction-to-version-control">1. Introduction to Version Control 🧠</h2>
       <p>Imagine you are writing a complex research paper. You save it as <code>paper_v1.docx</code>, then <code>paper_final.docx</code>, and finally <code>paper_real_final_V2.docx</code>. This is a mess. 🔵</p>
       <p><strong>Version Control</strong> is a system that manages this chaos automatically. It records every tiny change you make to a file so that you can go back to any previous version at any time. It solves the critical problem of "accidentally deleting work" or "breaking something that used to work."</p>
       <p><strong>In real life:</strong> It's like having a time machine for your project folders.</p>
 
-      <h2>2. What is Git 🔧</h2>
+      <h2 id="2-what-is-git">2. What is Git 🔧</h2>
       <p><strong>Git</strong> is the most widely used version control software in the world. Created by Linus Torvalds (the creator of Linux), it was designed to be fast, secure, and distributed. 🔵</p>
       <ul>
         <li><strong>Local:</strong> It runs directly on your computer.</li>
@@ -400,7 +400,7 @@ print(f"Each pays: {total / pax}")</code></pre>
       </ul>
       <p>Git exists because early version control tools were slow and required a constant internet connection. Git works offline and is incredibly powerful.</p>
 
-      <h2>3. What is GitHub 🐙</h2>
+      <h2 id="3-what-is-github">3. What is GitHub 🐙</h2>
       <p>A common mistake is thinking Git and GitHub are the same. They are not. 🔵</p>
       <ul>
         <li><strong>Git:</strong> The tool (the engine) you install on your computer to track changes.</li>
@@ -408,7 +408,7 @@ print(f"Each pays: {total / pax}")</code></pre>
       </ul>
       <p>Think of Git like your "saved games" on a console, and GitHub like the cloud service that lets you access those saves from any console in the world.</p>
 
-      <h2>4. Core Git & GitHub Terminology (Table)</h2>
+      <h2 id="4-core-git-github-terminology-table">4. Core Git & GitHub Terminology (Table)</h2>
       <p>Before we touch the command line, let's define the "language" of version control. 🔵</p>
       <table>
         <thead>
@@ -445,7 +445,7 @@ print(f"Each pays: {total / pax}")</code></pre>
         </tbody>
       </table>
 
-      <h2>5. Installing Git (Windows)</h2>
+      <h2 id="5-installing-git-windows">5. Installing Git (Windows)</h2>
       <p>To use Git, you must first install the engine on your computer. 🔵</p>
       <ol>
         <li>Go to <strong>git-scm.com</strong> and download the Windows installer.</li>
@@ -453,7 +453,7 @@ print(f"Each pays: {total / pax}")</code></pre>
         <li>Open <strong>PowerShell</strong> and type <code>git --version</code> to verify it's active.</li>
       </ol>
 
-      <h2>6. Initial Git Configuration</h2>
+      <h2 id="6-initial-git-configuration">6. Initial Git Configuration</h2>
       <p>Git needs to know who you are so it can label your saves (commits). 🔵</p>
       <pre><code>git config --global user.name "Your Name"
 git config --global user.email "you@example.com"</code></pre>
@@ -464,12 +464,12 @@ git config --global user.email "you@example.com"</code></pre>
       </ul>
       <p><strong>Note:</strong> This is mandatory. Without it, Git will refuse to save your work later.</p>
 
-      <h2>7. Creating Your First Git Repository</h2>
+      <h2 id="7-creating-your-first-git-repository">7. Creating Your First Git Repository</h2>
       <p>To start tracking a project, you must turn a folder into a <strong>Repository</strong>. 🔵</p>
       <pre><code>git init</code></pre>
       <p>This command creates a hidden folder named <code>.git</code>. This folder is the "brain" of your project—it stores every version of every file. Never delete it!</p>
 
-      <h2>8. Git File Lifecycle</h2>
+      <h2 id="8-git-file-lifecycle">8. Git File Lifecycle</h2>
       <p>Git doesn't just watch everything; you have to tell it what to track. Files move through four stages: 🔵</p>
       <ol>
         <li><strong>Untracked:</strong> Git hasn't noticed this file yet.</li>
@@ -478,39 +478,39 @@ git config --global user.email "you@example.com"</code></pre>
         <li><strong>Committed:</strong> The file and its changes are permanently in the project's history.</li>
       </ol>
 
-      <h2>9. Staging Files 📌</h2>
+      <h2 id="9-staging-files">9. Staging Files 📌</h2>
       <p>Before you commit, you must "Stage" your files using <strong>git add</strong>. 🔵</p>
       <pre><code>git add filename.txt
 # To stage everything:
 git add . </code></pre>
       <p><strong>Why staging exists:</strong> Imagine you are building a puzzle. Staging is like putting the correct pieces on the board before you glue them down forever (the commit). It allows you to choose exactly which changes go into a save point.</p>
 
-      <h2>10. Committing Changes</h2>
+      <h2 id="10-committing-changes">10. Committing Changes</h2>
       <p>A <strong>Commit</strong> is a permanent snapshot. Once committed, you can always return to this exact moment in time. 🔵</p>
       <pre><code>git commit -m "Fix login button alignment"</code></pre>
       <p>The <code>-m</code> stands for "message." A good message explains <em>why</em> you made the change. It's for your future self!</p>
 
-      <h2>11. Connecting to GitHub</h2>
+      <h2 id="11-connecting-to-github">11. Connecting to GitHub</h2>
       <p>To share your code, you need to connect your local repo to a <strong>Remote</strong> server like GitHub. 🔵</p>
       <pre><code>git remote add origin https://github.com/user/repo.git</code></pre>
       <p><strong>Origin:</strong> This is just a nickname for your primary GitHub server. You could name it "home" if you wanted, but "origin" is the industry standard.</p>
 
-      <h2>12. Pushing Code to GitHub</h2>
+      <h2 id="12-pushing-code-to-github">12. Pushing Code to GitHub</h2>
       <p>Now that you are connected, use <strong>git push</strong> to upload your work. 🔵</p>
       <pre><code>git push -u origin main</code></pre>
       <p>The <code>-u</code> flag links your local "main" branch to the one on GitHub. After the first time, you can just type <code>git push</code>.</p>
 
-      <h2>13. Cloning Repositories</h2>
+      <h2 id="13-cloning-repositories">13. Cloning Repositories</h2>
       <p>To download someone else's project (or your own on a new computer), use <strong>git clone</strong>. 🔵</p>
       <pre><code>git clone https://github.com/user/repo.git</code></pre>
       <p><strong>Difference from Download ZIP:</strong> A ZIP just gives you the current files. A <code>clone</code> gives you the files AND the entire history of every change ever made.</p>
 
-      <h2>14. Pulling Updates</h2>
+      <h2 id="14-pulling-updates">14. Pulling Updates</h2>
       <p>If someone else (or you from another laptop) uploads changes to GitHub, you need to sync your local files using <strong>git pull</strong>. 🔵</p>
       <pre><code>git pull origin main</code></pre>
       <p>This "fetches" the data from the server and "merges" it into your files automatically.</p>
 
-      <h2>15. Branching 🌿</h2>
+      <h2 id="15-branching">15. Branching 🌿</h2>
       <p><strong>Branches</strong> are parallel versions of your project. 🔵</p>
       <pre><code>git branch feature-login  # Create
 git checkout feature-login # Switch
@@ -518,21 +518,21 @@ git checkout feature-login # Switch
 git checkout -b feature-payment</code></pre>
       <p><strong>Why:</strong> You can break things in a branch without hurting the main "production" code. It's the ultimate safety net for experimentation.</p>
 
-      <h2>16. Merging Branches</h2>
+      <h2 id="16-merging-branches">16. Merging Branches</h2>
       <p>Once your experiment in a branch is finished and working, you "Merge" it back into the main timeline. 🔵</p>
       <pre><code>git checkout main
 git merge feature-login</code></pre>
       <p><strong>Fact:</strong> A "Fast-forward" merge happens if the main branch hasn't changed since you started your feature—Git just slides your changes in easily.</p>
 
-      <h2>17. Forking & Open-Source Workflow</h2>
+      <h2 id="17-forking-open-source-workflow">17. Forking & Open-Source Workflow</h2>
       <p><strong>Forking</strong> is a GitHub feature. It creates a complete copy of someone else's project into your own account. 🔵</p>
       <p><strong>The Flow:</strong> Fork (GitHub) → Clone (Local) → Branch → Commit → Push → PR (to the original owner).</p>
 
-      <h2>18. Pull Requests (PRs)</h2>
+      <h2 id="18-pull-requests-prs">18. Pull Requests (PRs)</h2>
       <p>A <strong>Pull Request</strong> is a polite way of saying: "Hey, I improved your code. Please pull my changes into your project!" 🔵</p>
       <p>It's a dashboard where developers review code, leave comments, and suggest fixes before the code becomes permanent.</p>
 
-      <h2>19. Undoing Mistakes ⚠️</h2>
+      <h2 id="19-undoing-mistakes">19. Undoing Mistakes ⚠️</h2>
       <p>Don't panic! Git makes it hard to lose work permanently. 🔵</p>
       <pre><code># Undo changes to a single file:
 git checkout -- filename.txt
@@ -541,26 +541,26 @@ git checkout -- filename.txt
 git reset --soft HEAD~1</code></pre>
       <p><strong>Revert vs Reset:</strong> Reset is like erasing history. Revert creates a "new" commit that undoes an old one—safely.</p>
 
-      <h2>20. Viewing History</h2>
+      <h2 id="20-viewing-history">20. Viewing History</h2>
       <p>To see your project's history (who did what and when), use <strong>git log</strong>. 🔵</p>
       <pre><code>git log --oneline --graph</code></pre>
       <p>Using <code>--oneline</code> makes the list much easier to scan, showing just the commit ID and your message.</p>
 
-      <h2>21. .gitignore</h2>
+      <h2 id="21-gitignore">21. .gitignore</h2>
       <p>Some files (like passwords, huge media files, or temporary system files) should never be tracked. We list these in a text file named <code>.gitignore</code>. 🔵</p>
       <pre><code># Example .gitignore content
 .env
 node_modules/
 *.log</code></pre>
 
-      <h2>22. Authentication: HTTPS vs SSH</h2>
+      <h2 id="22-authentication-https-vs-ssh">22. Authentication: HTTPS vs SSH</h2>
       <p>How does GitHub know it's really you? 🔵</p>
       <ul>
         <li><strong>HTTPS:</strong> Asks for your username and a "Personal Access Token." Best for beginners.</li>
         <li><strong>SSH:</strong> Uses a "key" stored on your computer. More secure and convenient for pros.</li>
       </ul>
 
-      <h2>23. Common Git Errors & Fixes ⚠️</h2>
+      <h2 id="23-common-git-errors-fixes">23. Common Git Errors & Fixes ⚠️</h2>
       <table>
         <thead>
           <tr>
@@ -588,14 +588,14 @@ node_modules/
         </tbody>
       </table>
 
-      <h2>24. Git & GitHub Best Practices ✅</h2>
+      <h2 id="24-git-github-best-practices">24. Git & GitHub Best Practices ✅</h2>
       <ul>
         <li><strong>Commit Small & Often:</strong> Don't wait 10 hours to save. 🔵</li>
         <li><strong>Never Commit Secrets:</strong> Keep API keys in <code>.env</code> and <a href="#21-gitignore">gitignore</a> them.</li>
         <li><strong>Write Imperative Messages:</strong> "Add login" instead of "Added login".</li>
       </ul>
 
-      <h2>25. Daily Git Workflow 📌</h2>
+      <h2 id="25-daily-git-workflow">25. Daily Git Workflow 📌</h2>
       <p>Follow this routine to stay safe: 🔵</p>
       <ol>
         <li>Start of day: <code>git pull</code></li>
@@ -604,7 +604,7 @@ node_modules/
         <li>End of day: <code>git push origin feature-x</code></li>
       </ol>
 
-      <h2>26. Conclusion 🎯</h2>
+      <h2 id="26-conclusion">26. Conclusion 🎯</h2>
       <p>Version control is a superpower. You have gone from wondering what a "terminal" is to understanding the workflow used by teams at Apple and Space-X. Stay consistent, keep pushing to GitHub, and never fear a mistake again! 🔵</p>
     `
   },
