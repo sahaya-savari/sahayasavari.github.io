@@ -5,236 +5,164 @@
 
 /* Hero Section */
 .hero {
-  padding: 3rem 0 3.5rem;
+  padding: 6rem 0 4rem;
   position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+  z-index: -1;
 }
 
 .heroContent {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.heroText {
-  text-align: center;
+  max-width: 900px;
 }
 
 .heroTitle {
-  font-size: 3.5rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 4.5rem;
   font-weight: 800;
   background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 0 0 1.25rem 0;
-  line-height: 1.15;
+  margin: 0 0 1.5rem 0;
+  line-height: 1;
+  letter-spacing: -0.04em;
 }
 
 .heroSubtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
   line-height: 1.7;
-  margin: 0 0 2.5rem 0;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 0 3rem 0;
+  max-width: 600px;
 }
 
 .heroActions {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1.25rem;
   flex-wrap: wrap;
 }
 
-.primaryBtn {
+.primaryBtn,
+.secondaryBtn {
+  font-family: 'Inter', sans-serif;
   display: inline-flex;
   align-items: center;
-  gap: 0.625rem;
-  padding: 1rem 2rem;
-  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  border: none;
-  border-radius: 12px;
-  color: white;
+  gap: 0.75rem;
+  padding: 1.125rem 2.25rem;
+  border-radius: 16px;
   font-weight: 600;
   font-size: 1rem;
   text-decoration: none;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px var(--accent-glow);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
-.primaryBtn:hover {
-  transform: translateY(-2px);
+.primaryBtn {
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  color: white;
   box-shadow: 0 8px 24px var(--accent-glow);
 }
 
-.primaryBtn:active {
-  transform: translateY(-1px) scale(0.98);
-  transition-duration: 0.1s;
+.primaryBtn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--accent-glow);
 }
 
 .secondaryBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 1rem 2rem;
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  border-radius: 12px;
   color: var(--text-primary);
-  font-weight: 600;
-  font-size: 1rem;
-  text-decoration: none;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-              background 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  will-change: transform;
 }
 
 .secondaryBtn:hover {
   background: var(--glass-hover-bg);
   border-color: var(--accent-primary);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px var(--accent-glow);
-}
-
-.secondaryBtn:active {
-  transform: translateY(-1px) scale(0.98);
-  transition-duration: 0.1s;
-}
-
-.btnIcon {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.primaryBtn:hover .btnIcon,
-.secondaryBtn:hover .btnIcon {
-  transform: translateX(3px);
+  transform: translateY(-4px);
 }
 
 /* Featured Section */
 .featured {
-  padding: 2.5rem 0 3.5rem;
+  padding: 4rem 0 6rem;
 }
 
 .sectionTitle {
-  font-size: 2rem;
-  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
   color: var(--text-primary);
-  margin: 0 0 3rem 0;
-  text-align: center;
-  position: relative;
-}
-
-.sectionTitle::after {
-  content: '';
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-  border-radius: 2px;
+  margin-bottom: 4rem;
+  letter-spacing: -0.02em;
 }
 
 .cardGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.75rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .featureCard {
-  padding: 2.25rem 1.75rem !important;
-  text-align: center;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-              border-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: default;
-  position: relative;
-  overflow: hidden;
-  will-change: transform;
-}
-
-.featureCard::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-  opacity: 0;
-  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: 24px !important;
+  padding: 2.5rem !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 .featureCard:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-primary);
-}
-
-.featureCard:hover::before {
-  opacity: 1;
-}
-
-.cardIconWrapper {
-  margin-bottom: 1.5rem;
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--accent-primary) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .cardIcon {
-  width: 64px;
-  height: 64px;
-  margin: 0 auto;
+  width: 56px;
+  height: 56px;
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(6, 182, 212, 0.1));
+  background: hsla(171, 77%, 40%, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-              background 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.featureCard:hover .cardIcon {
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.2), rgba(6, 182, 212, 0.2));
-  transform: scale(1.08);
-}
-
-.cardIcon svg {
-  width: 32px;
-  height: 32px;
+  margin-bottom: 1.5rem;
   color: var(--accent-primary);
-  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.featureCard:hover .cardIcon svg {
-  transform: scale(1.05);
 }
 
 .cardTitle {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0 0 0.75rem 0;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
 }
 
 .cardDescription {
-  font-size: 0.9375rem;
   color: var(--text-secondary);
+  font-size: 1rem;
   line-height: 1.6;
-  margin: 0;
 }
 
-/* Tablet Styles */
 @media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 3.5rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
   .hero {
-    padding: 3rem 0 4rem;
+    padding: 4rem 0;
   }
 
   .heroTitle {
@@ -245,32 +173,8 @@
     font-size: 1.125rem;
   }
 
-  .cardGrid {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.5rem;
-  }
-}
-
-/* Mobile Styles */
-@media (max-width: 768px) {
-  .hero {
-    padding: 2.5rem 0 3rem;
-  }
-
-  .heroTitle {
-    font-size: 2.25rem;
-  }
-
-  .heroSubtitle {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-
   .heroActions {
     flex-direction: column;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
   }
 
   .primaryBtn,
@@ -279,43 +183,8 @@
     justify-content: center;
   }
 
-  .featured {
-    padding: 2rem 0 3rem;
-  }
-
   .sectionTitle {
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-
-  .cardGrid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
-  }
-
-  .featureCard {
-    padding: 2rem 1.5rem !important;
-  }
-}
-
-@media (max-width: 480px) {
-  .heroTitle {
     font-size: 2rem;
-  }
-
-  .heroSubtitle {
-    font-size: 0.9375rem;
-  }
-
-  .sectionTitle {
-    font-size: 1.5rem;
-  }
-
-  .cardTitle {
-    font-size: 1.125rem;
-  }
-
-  .cardDescription {
-    font-size: 0.875rem;
+    margin-bottom: 3rem;
   }
 }
