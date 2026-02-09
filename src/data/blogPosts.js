@@ -7,31 +7,44 @@ export const blogPosts = [
     date: 'February 10, 2026',
     excerpt: 'The ultimate professional roadmap for Python. From installation and variables to complex logic, loops, and functions.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Python is the world's most popular language because it feels like English. 🟢 It is clean, logical, and designed to let you focus on solving problems rather than fighting with complex syntax.</p>
+      <h2>🚀 Introduction</h2>
+      <p>Python is the world's most popular language because it feels like English. 🟢 This guide assumes <strong>zero prior knowledge</strong> and explains <strong>every concept</strong>, <strong>why it exists</strong>, and <strong>how it is used</strong>, step by step.</p>
 
       <h2>📚 Table of Contents</h2>
       <ul>
-        <li><a href="#setup">Installing Python</a></li>
-        <li><a href="#variables">Variables & Data Types</a></li>
-        <li><a href="#logic">Logic & Decisions (If/Else)</a></li>
-        <li><a href="#loops">Loops & Automation</a></li>
-        <li><a href="#functions">Functions & Reusability</a></li>
-        <li><a href="#errors">Handling Errors</a></li>
+        <li><a href="#py-intro">What is Python</a></li>
+        <li><a href="#py-setup">Installing Python (Windows)</a></li>
+        <li><a href="#py-config">Initial Configuration</a></li>
+        <li><a href="#py-vars">Variables & Data Types</a></li>
+        <li><a href="#py-logic">Logic & Decisions (If/Else)</a></li>
+        <li><a href="#py-loops">Loops & Automation</a></li>
+        <li><a href="#py-functions">Functions & Reusability</a></li>
+        <li><a href="#py-errors">Common Errors & Fixes</a></li>
+        <li><a href="#py-best">Best Practices</a></li>
       </ul>
 
-      <h2 id="setup">💻 Installing Python (Windows)</h2>
-      <p>1. Download the latest version from <strong>python.org</strong>. 🟢<br>
-      2. <strong>IMPORTANT:</strong> Check the box "Add Python to PATH" during installation.<br>
-      3. Open your terminal and type <code>python --version</code> to confirm.</p>
+      <h2 id="py-intro">🧠 What is Python</h2>
+      <p>Python is an <strong>interpreted, high-level language</strong>. 🟢</p>
+      <ul>
+        <li>It is clear, logical, and easy to read.</li>
+        <li>It powers AI, Web Development, and Data Science.</li>
+        <li>It handles the complex computer memory for you.</li>
+      </ul>
 
-      <h2 id="variables">📦 Variables & Data Types</h2>
-      <p>Think of variables as labeled boxes that store different types of information. 🟢</p>
+      <h2 id="py-setup">💻 Installing Python (Windows)</h2>
+      <ol>
+        <li>Go to <strong>python.org</strong>.</li>
+        <li>Download the latest version.</li>
+        <li><strong>CRITICAL:</strong> Check "Add Python to PATH" during setup.</li>
+        <li>Verify by typing <code>python --version</code> in terminal.</li>
+      </ol>
+
+      <h2 id="py-vars">📦 Variables & Data Types</h2>
       <table>
         <thead>
           <tr>
             <th>Type</th>
-            <th>Description</th>
+            <th>Plain English Meaning</th>
             <th>Example</th>
           </tr>
         </thead>
@@ -42,7 +55,7 @@ export const blogPosts = [
             <td><code>"Hello"</code></td>
           </tr>
           <tr>
-            <td>Int</td>
+            <td>Integer</td>
             <td>Whole numbers</td>
             <td><code>42</code></td>
           </tr>
@@ -59,44 +72,33 @@ export const blogPosts = [
         </tbody>
       </table>
 
-      <h2 id="logic">🧠 Logic & Decisions</h2>
-      <p>Python uses <strong>Indentation</strong> (4 spaces) to define blocks of code. 🟢 It cares about how your code looks!</p>
+      <h2 id="py-logic">⚙️ Logic & Decisions</h2>
+      <p>Python uses <strong>Indentation</strong> to group logic. 🟢</p>
       <pre><code>if score >= 90:
     print("Grade: A")
-elif score >= 80:
-    print("Grade: B")
 else:
     print("Keep working!")</code></pre>
 
-      <h2 id="loops">🔄 Loops & Automation</h2>
-      <p>Loops allow you to repeat a task thousands of times without rewriting code. 🟢</p>
-      <pre><code># Looping through a list
-books = ["Python", "Git", "React"]
-for book in books:
-    print(f"Reading: {book}")</code></pre>
+      <h2 id="py-loops">🔄 Loops & Automation</h2>
+      <pre><code>for i in range(5):
+    print(f"Iteration: {i}")</code></pre>
+      <p><strong>Why:</strong> Automates repetitive tasks efficiently.</p>
 
-      <h2 id="functions">🛠 Functions & Reusability</h2>
-      <p>Functions are packaged "recipes" of logic that you can name and call whenever you need them. 🟢</p>
+      <h2 id="py-functions">🛠 Functions & Reusability</h2>
       <pre><code>def greet(name):
-    return f"Hello, {name}!"
+    return f"Hello, {name}!"</code></pre>
+      <p><strong>Why:</strong> Packaged logic that can be reused anywhere.</p>
 
-print(greet("Savari"))</code></pre>
+      <h2 id="py-best">✅ Best Practices</h2>
+      <ul>
+        <li>Keep it simple (Zen of Python).</li>
+        <li>Use descriptive variable names.</li>
+        <li>Comment your code where necessary.</li>
+        <li>Consistent indentation is mandatory.</li>
+      </ul>
 
-      <h2 id="errors">⚠️ Handling Errors</h2>
-      <p>Even professional code crashes. Use <code>try/except</code> to handle errors gracefully. 🟢</p>
-      <pre><code>try:
-    number = int(input("Enter a number: "))
-except ValueError:
-    print("That's not a valid number!")</code></pre>
-
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Logic is the core skill. 🟢 Languages are just tools. Once you understand <em>how</em> to solve a problem with Python's logic, you can learn any other language much faster.</p>
-
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I used to overcomplicate my code. 🟢 I've learned that "Simple is better than complex." If you can explain your code to a friend, it's good code.</p>
-
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>You now have the full foundation of Python. 🟢 Start by building a small project—like a personal calculator or a to-do list—to seal this knowledge into memory.</p>
+      <h2>🎯 Conclusion</h2>
+      <p>Mastering Python opens doors to the future. 🟢 Practice daily, build small things, and stay curious.</p>
     `
   },
   {
@@ -104,21 +106,55 @@ except ValueError:
     category: 'github',
     title: '🧰 Git & GitHub — Complete Practical Guide',
     date: 'February 10, 2026',
-    excerpt: 'A strict, professional, beginner-friendly guide to Git and GitHub, covering every command from zero to hero.',
+    excerpt: 'A strict, professional, beginner-friendly guide to Git and GitHub. Assumes zero prior knowledge.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
+      <h2>🚀 Introduction</h2>
       <p>Git and GitHub help you <strong>track changes</strong>, <strong>avoid losing work</strong>, and <strong>collaborate safely</strong>. 🔵 This guide teaches Git from the ground up, starting with <em>what problem it solves</em> before showing <em>how to use it</em>.</p>
+
+      <h2>📚 Table of Contents</h2>
+      <ol>
+        <li>What is Git</li>
+        <li>What is GitHub</li>
+        <li>Core Terminology</li>
+        <li>Installing Git (Windows)</li>
+        <li>Initial Git Configuration</li>
+        <li>Creating a Repository</li>
+        <li>Git File Lifecycle</li>
+        <li>Staging Files</li>
+        <li>Committing Changes</li>
+        <li>Connecting to GitHub</li>
+        <li>Pushing Code</li>
+        <li>Cloning Repositories</li>
+        <li>Pulling Updates</li>
+        <li>Branching</li>
+        <li>Merging</li>
+        <li>Forking & Open-Source Workflow</li>
+        <li>Pull Requests</li>
+        <li>Undoing Mistakes</li>
+        <li>Viewing History</li>
+        <li>.gitignore</li>
+        <li>Authentication (HTTPS vs SSH)</li>
+        <li>Common Errors & Fixes</li>
+        <li>Best Practices</li>
+        <li>Daily Git Workflow</li>
+      </ol>
 
       <h2>🧠 What is Git</h2>
       <p>Git is a <strong>version control system</strong>. 🔵</p>
       <ul>
-        <li>It keeps a <strong>history of your files</strong>.</li>
-        <li>It lets you <strong>go back in time</strong> to any local version.</li>
-        <li>It works <strong>locally on your computer</strong> (doesn't require internet).</li>
+        <li>It keeps a <strong>history of your files</strong></li>
+        <li>It lets you <strong>go back in time</strong></li>
+        <li>It works <strong>locally on your computer</strong></li>
+        <li>It does <strong>not require internet</strong> to function</li>
       </ul>
+      <p>Git tracks <em>what changed</em>, <em>when it changed</em>, and <em>why it changed</em>.</p>
 
       <h2>🌍 What is GitHub</h2>
-      <p>GitHub is a <strong>website</strong> that stores Git repositories online. 🔵 Think of it as the "Cloud" for your code. It helps with backups, sharing, and collaboration on larger projects.</p>
+      <p>GitHub is a <strong>website</strong> that stores Git repositories online. 🔵</p>
+      <ul>
+        <li>Git → works on your computer</li>
+        <li>GitHub → stores copies on the internet</li>
+      </ul>
 
       <h2>📘 Core Terminology</h2>
       <table>
@@ -146,72 +182,70 @@ except ValueError:
             <td>A parallel version of the project</td>
           </tr>
           <tr>
+            <td>Merge</td>
+            <td>Combine branches</td>
+          </tr>
+          <tr>
             <td>Remote</td>
             <td>Online copy (GitHub)</td>
+          </tr>
+          <tr>
+            <td>Push / Pull</td>
+            <td>Upload / Download updates</td>
           </tr>
         </tbody>
       </table>
 
       <h2>💻 Installing Git (Windows)</h2>
-      <p>1. Go to <strong>git-scm.com</strong> and download the installer. 🔵<br>
-      2. Run the setup and keep the default settings.<br>
-      3. Verify by typing <code>git --version</code> in your terminal.</p>
+      <ol>
+        <li>Go to <strong>https://git-scm.com</strong></li>
+        <li>Download for Windows and install with default settings.</li>
+        <li>Verify: <code>git --version</code></li>
+      </ol>
 
       <h2>⚙️ Initial Git Configuration</h2>
-      <p>Git needs to know who you are to record who made which changes. 🔵</p>
       <pre><code>git config --global user.name "Your Name"
 git config --global user.email "you@example.com"</code></pre>
+      <p><strong>Why:</strong> Every commit records an author.</p>
 
       <h2>📁 Creating a Repository</h2>
-      <p>To start tracking a folder, navigate to it in your terminal and type: 🔵</p>
       <pre><code>git init</code></pre>
-      <p>This creates a hidden <code>.git</code> folder that stores all your project's history.</p>
+      <p><strong>Why:</strong> Turns a normal folder into a tracked project.</p>
 
       <h2>🔄 Git File Lifecycle</h2>
-      <p>Files move through three main stages: 🔵<br>
-      <strong>Untracked</strong> (Git ignores them) → <strong>Staged</strong> (Ready to save) → <strong>Committed</strong> (Permanently saved).</p>
+      <p><strong>Untracked</strong> (Ignored) → <strong>Staged</strong> (Ready) → <strong>Committed</strong> (Saved). 🔵</p>
 
       <h2>📥 Staging Files</h2>
-      <p>The "Staging Area" is like a shopping cart where you put items before checking out. 🔵</p>
-      <pre><code>git add index.html  # Adds one file
-git add .           # Adds ALL changed files</code></pre>
+      <pre><code>git add .</code></pre>
+      <p><strong>Why:</strong> Prepares all changes for the next save point.</p>
 
       <h2>💾 Committing Changes</h2>
-      <p>A commit is a snapshot of your project at a specific moment. 🔵</p>
-      <pre><code>git commit -m "Add login feature"</code></pre>
-      <p>Always write clear, descriptive messages so you know *why* you made a change.</p>
+      <pre><code>git commit -m "Add feature"</code></pre>
+      <p><strong>Why:</strong> Creates a permanent restore point with a message.</p>
 
       <h2>🔗 Connecting to GitHub</h2>
-      <p>Link your local folder to a repository you created on GitHub: 🔵</p>
       <pre><code>git remote add origin https://github.com/username/repo.git</code></pre>
 
       <h2>🚀 Pushing Code</h2>
-      <p>Upload your local commits to the cloud: 🔵</p>
       <pre><code>git push origin main</code></pre>
 
-      <h2>📥 Cloning Repositories</h2>
-      <p>Download an existing project and its entire history: 🔵</p>
-      <pre><code>git clone https://github.com/username/repo.git</code></pre>
-
       <h2>🌱 Branching & Merging</h2>
-      <p><strong>Branches</strong> allow you to work on new features without breaking the main code. 🔵 Once finished, you <strong>Merge</strong> them back into the main branch.</p>
-      <pre><code>git checkout -b new-feature  # Create and switch
-git merge new-feature        # Combine changes</code></pre>
+      <pre><code>git branch feature-x  # Create
+git checkout feature-x # Switch
+git merge feature-x    # Combine</code></pre>
 
       <h2>⏪ Undoing Mistakes</h2>
-      <p>Made a mistake? You can restore a file to its last healthy state: 🔵</p>
       <pre><code>git restore file.txt</code></pre>
-      <p>Or undo a commit while keeping your work: <code>git reset --soft HEAD~1</code></p>
+      <p><strong>Why:</strong> Discards local changes instantly.</p>
 
       <h2>🚫 .gitignore</h2>
-      <p>Use a <code>.gitignore</code> file to tell Git to ignore files you don't want to upload, like passwords (<code>.env</code>) or large folders (<code>node_modules/</code>). 🔵</p>
+      <p>Tells Git what to ignore (e.g. <code>node_modules/</code>, <code>.env</code>). 🔵</p>
 
       <h2>🗓️ Daily Git Workflow</h2>
-      <p>A typical professional day looks like this: 🔵</p>
-      <p><code>Edit Code</code> → <code>git add .</code> → <code>git commit -m "..."</code> → <code>git pull</code> → <code>git push</code></p>
+      <p><code>Edit</code> → <code>Status</code> → <code>Add</code> → <code>Commit</code> → <code>Pull</code> → <code>Push</code></p>
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Mastering Git means less fear and better collaboration. 🔵 Practice these commands daily until they become muscle memory. Start by pushing one small project today!</p>
+      <h2>🎯 Conclusion</h2>
+      <p>Mastering Git means less fear and better collaboration. Practice daily and push with confidence. 🔵</p>
     `
   },
   {
