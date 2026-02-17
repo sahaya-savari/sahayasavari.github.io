@@ -115,11 +115,43 @@ const BlogList = () => {
             </Link>
           </ScrollReveal>
           <ScrollReveal delay={200}>
+            <Link to="/blog/react" className={styles.topicCard} data-category="react">
+              <div className={styles.topicIcon}>⚛️</div>
+              <h2 className={styles.topicTitle}>React & Web Dev</h2>
+              <p className={styles.topicDescription}>
+                Deep dives into component architecture, hooks, and modern web performance.
+              </p>
+              <span className={styles.viewBtn}>
+                View Collection
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </Link>
+          </ScrollReveal>
+          <ScrollReveal delay={300}>
             <Link to="/blog/github" className={styles.topicCard} data-category="github">
               <div className={styles.topicIcon}>🔧</div>
               <h2 className={styles.topicTitle}>Git & GitHub</h2>
               <p className={styles.topicDescription}>
-                Complete practical guide: staging, committing, pushing, and collaborating with Git & GitHub.
+                Practical guide to version control, repository management, and collaboration.
+              </p>
+              <span className={styles.viewBtn}>
+                View Collection
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </span>
+            </Link>
+          </ScrollReveal>
+          <ScrollReveal delay={400}>
+            <Link to="/blog/programming" className={styles.topicCard} data-category="programming">
+              <div className={styles.topicIcon}>🚀</div>
+              <h2 className={styles.topicTitle}>Learning Roadmap</h2>
+              <p className={styles.topicDescription}>
+                Proven strategies and roadmaps for becoming an effective self-taught developer.
               </p>
               <span className={styles.viewBtn}>
                 View Collection

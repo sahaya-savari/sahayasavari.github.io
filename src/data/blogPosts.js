@@ -1360,39 +1360,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['Programming', 'Beginner', 'Learning'],
     excerpt: 'A universal roadmap for beginners to stay focused, consistent, and avoid burnout while learning to code.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>The hardest part of coding isn't the math—it is knowing where to start. 🟡 With thousands of tools, beginners often feel lost in the "tutorial hell".</p>
+## 🚀 Introduction / Context
+The hardest part of coding isn't the math—it is knowing where to start. 🟡 With thousands of tools, beginners often feel lost in the "tutorial hell".
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Most people quit because they try to learn everything at once. 🟡 Burnout happens when you follow tutorials without actually building anything of your own.</p>
+## ❗ Problem or Motivation
+Most people quit because they try to learn everything at once. 🟡 Burnout happens when you follow tutorials without actually building anything of your own.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p>Programming is <strong>Logic</strong>, not Memorization. 🟡 You are learning how to solve problems; the coding language is just the tool you use to do it.</p>
+## 🧠 Core Concept / Idea
+Programming is **Logic**, not Memorization. 🟡 You are learning how to solve problems; the coding language is just the tool you use to do it.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Pick ONE Language 🟡</h3>
-      <p>Don't jump between languages. Start with Python or JavaScript and stick with it until you can build a basic app.</p>
+### 1. Pick ONE Language 🟡
+Don't jump between languages. Start with Python or JavaScript and stick with it until you can build a basic app.
 
-      <h3>2. The 20-Minute Rule 🟡</h3>
-      <p>Consistency beats intensity. Coding for 20 minutes every day is better than a 5-hour marathon once a week.</p>
+### 2. The 20-Minute Rule 🟡
+Consistency beats intensity. Coding for 20 minutes every day is better than a 5-hour marathon once a week.
 
-      <h3>3. Build "Useless" Things 🟡</h3>
-      <p>Make a tip calculator or a name generator. Building something from scratch teaches more than 100 video tutorials.</p>
+### 3. Build "Useless" Things 🟡
+Make a tip calculator or a name generator. Building something from scratch teaches more than 100 video tutorials.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of learning to code like learning a <strong>Musical Instrument</strong>. 🟡</p>
-      <p>Watching someone else play guitar doesn't make you a musician. You have to pick up the guitar, make some bad noises, and practice your scales every day.</p>
+## 🛠 Practical Understanding / Intuition
+Think of learning to code like learning a **Musical Instrument**. 🟡
+Watching someone else play guitar doesn't make you a musician. You have to pick up the guitar, make some bad noises, and practice your scales every day.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>The "Imposter Syndrome" is real. 🟡 You will feel like you aren't "smart enough". Everyone feels this, even senior engineers at Google.</p>
+## ⚠️ Limitations or Challenges
+The "Imposter Syndrome" is real. 🟡 You will feel like you aren't "smart enough". Everyone feels this, even senior engineers at Google.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I spent months watching videos without writing a single line of code. 🟡 My progress only started when I tried to build a simple website and failed 50 times.</p>
+## ✍️ Personal Learning / Reflection
+I spent months watching videos without writing a single line of code. 🟡 My progress only started when I tried to build a simple website and failed 50 times.
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Stop overthinking the roadmap. 🟡 Pick a language, set a timer for 20 minutes, and write your first <code>print("Hello")</code> today.</p>
-    `
+## 🎯 Conclusion / Takeaway
+Stop overthinking the roadmap. 🟡 Pick a language, set a timer for 20 minutes, and write your first \`print("Hello")\` today.
+`
   },
   {
     slug: 'getting-started-with-react',
@@ -1402,39 +1402,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['React', 'JavaScript', 'Web Dev'],
     excerpt: 'A comprehensive guide to building modern web applications with React, covering components, hooks, and best practices.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>React is the engine behind modern websites like Facebook and Netflix. 🔵 It changes how we build the web by letting us create small, reusable pieces.</p>
+## 🚀 Introduction / Context
+React is the engine behind modern websites like Facebook and Netflix. 🔵 It changes how we build the web by letting us create small, reusable pieces.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Old-school web coding required updating every single page manually. 🔵 It was slow and led to messy, hard-to-maintain code as apps grew larger.</p>
+## ❗ Problem or Motivation
+Old-school web coding required updating every single page manually. 🔵 It was slow and led to messy, hard-to-maintain code as apps grew larger.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>Components.</strong> 🔵 Think of your website as a set of LEGO bricks. You build a "Button" brick once and use it everywhere.</p>
+## 🧠 Core Concept / Idea
+**Components.** 🔵 Think of your website as a set of LEGO bricks. You build a "Button" brick once and use it everywhere.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Components (The Bricks) 🔵</h3>
-      <p>Every part of your UI—the header, the sidebar, the buttons—is a component. They are independent and easy to test.</p>
+### 1. Components (The Bricks) 🔵
+Every part of your UI—the header, the sidebar, the buttons—is a component. They are independent and easy to test.
 
-      <h3>2. State (The Memory) 🔵</h3>
-      <p>State is how a component remembers things, like "Is this button clicked?" or "What is in the shopping cart?".</p>
+### 2. State (The Memory) 🔵
+State is how a component remembers things, like "Is this button clicked?" or "What is in the shopping cart?".
 
-      <h3>3. Hooks (The Simple Logic) 🔵</h3>
-      <p>Hooks like <code>useState</code> allow you to add "life" and interactive behavior to your components with very little code.</p>
+### 3. Hooks (The Simple Logic) 🔵
+Hooks like \`useState\` allow you to add "life" and interactive behavior to your components with very little code.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of React as a <strong>Smart Blueprint</strong>. 🔵</p>
-      <p>Instead of drawing the whole house every time, you create blueprints for "Windows" and "Doors". When you want to change the color of all windows, you just update the blueprint once.</p>
+## 🛠 Practical Understanding / Intuition
+Think of React as a **Smart Blueprint**. 🔵
+Instead of drawing the whole house every time, you create blueprints for "Windows" and "Doors". When you want to change the color of all windows, you just update the blueprint once.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>React has a learning curve. 🔵 Concepts like "State" and "Props" can be confusing at first, and the setup (Vite/Node) can feel heavy.</p>
+## ⚠️ Limitations or Challenges
+React has a learning curve. 🔵 Concepts like "State" and "Props" can be confusing at first, and the setup (Vite/Node) can feel heavy.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I struggled with React until I stopped trying to understand the "whole app" and focused on building one tiny component at a time. 🔵 Small wins lead to big success.</p>
+## ✍️ Personal Learning / Reflection
+I used to try and learn every React library at once. 🔵 Focus on the core first. Once you understand components and props, the rest becomes much easier.
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>React is a superpower for web devs. 🔵 Start by building a simple "Counter" button to see how components and state work together.</p>
-    `
+## 🎯 Conclusion / Takeaway
+React makes web development faster and more fun. 🔵 Start by building a small project, like a simple to-do list, to get a feel for how everything fits together.
+`
   },
   {
     slug: 'machine-learning-basics',
@@ -1444,39 +1444,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['Machine Learning', 'AI', 'Python'],
     excerpt: 'Understanding the fundamentals of machine learning, from supervised learning to neural networks.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Machine Learning (ML) is the magic that lets computers learn patterns from data. 🟢 It is what powers your Netflix recommendations and face ID.</p>
+## 🚀 Introduction / Context
+Machine Learning (ML) is the magic that lets computers learn patterns from data. 🟢 It is what powers your Netflix recommendations and face ID.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>It's impossible to write code for every scenario (like recognizing every dog in the world). 🟢 We need a way for computers to "figure it out" themselves.</p>
+## ❗ Problem or Motivation
+It's impossible to write code for every scenario (like recognizing every dog in the world). 🟢 We need a way for computers to "figure it out" themselves.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>Learning from Examples.</strong> 🟢 Instead of giving rules, you give the computer 10,000 photos and tell it: "These are dogs, these are not."</p>
+## 🧠 Core Concept / Idea
+**Learning from Examples.** 🟢 Instead of giving rules, you give the computer 10,000 photos and tell it: "These are dogs, these are not."
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Supervised Learning 🟢</h3>
-      <p>The "Teacher" method. You give labeled data (input + answer) so the computer can learn the relationship.</p>
+### 1. Supervised Learning 🟢
+The "Teacher" method. You give labeled data (input + answer) so the computer can learn the relationship.
 
-      <h3>2. Features (The Clues) 🟢</h3>
-      <p>Features are the specific details the computer looks at, like "ear shape" or "fur color", to make its decision.</p>
+### 2. Features (The Clues) 🟢
+Features are the specific details the computer looks at, like "ear shape" or "fur color", to make its decision.
 
-      <h3>3. The Model (The Prediction) 🟢</h3>
-      <p>After training, the computer creates a "Model"—a math formula that can predict the answer for new data it hasn't seen before.</p>
+### 3. The Model (The Prediction) 🟢
+After training, the computer creates a "Model"—a math formula that can predict the answer for new data it hasn't seen before.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of ML as a <strong>Child Learning</strong>. 🟢</p>
-      <p>A child doesn't learn what a "chair" is through a technical definition. They learn by seeing 20 different chairs until their brain recognizes the pattern.</p>
+## 🛠 Practical Understanding / Intuition
+Think of ML as a **Child Learning**. 🟢
+A child doesn't learn what a "chair" is through a technical definition. They learn by seeing 20 different chairs until their brain recognizes the pattern.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>ML requires <strong>Good Data</strong>. 🟢 If you give the computer bad examples (Bias), it will learn the wrong things and make bad predictions.</p>
+## ⚠️ Limitations or Challenges
+ML requires **Good Data**. 🟢 If you give the computer bad examples (Bias), it will learn the wrong things and make bad predictions.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I thought I needed to be a math genius for ML. 🟢 I didn't. Most of it is about data cleaning and choosing the right tool for the job. Start with simple libraries!</p>
+## ✍️ Personal Learning / Reflection
+I thought I needed to be a math genius for ML. 🟢 I didn't. Most of it is about data cleaning and choosing the right tool for the job. Start with simple libraries!
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>ML is about finding patterns. 🟢 Start by playing with interactive tools like Google's Teachable Machine to see ML in action without any code.</p>
-    `
+## 🎯 Conclusion / Takeaway
+ML is about finding patterns. 🟢 Start by playing with interactive tools like Google's Teachable Machine to see ML in action without any code.
+`
   },
   {
     slug: 'data-visualization-tips',
@@ -1486,43 +1486,41 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['Data Science', 'Python', 'Visualization'],
     excerpt: 'Best practices for creating effective and beautiful data visualizations that tell compelling stories.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Data visualization is the art of turning boring numbers into a story everyone can understand. 🟢 It is the bridge between data and decisions.</p>
+## 🚀 Introduction / Context
+Data visualization is the art of turning boring numbers into a story everyone can understand. 🟢 It is the bridge between data and decisions.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Spreadsheets are hard to read. 🟢 It is easy to miss a massive trend or a dangerous drop when it is buried in 1,000 rows of numbers.</p>
+## ❗ Problem or Motivation
+Spreadsheets are hard to read. 🟢 It is easy to miss a massive trend or a dangerous drop when it is buried in 1,000 rows of numbers.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>Visual Efficiency.</strong> 🟢 Humans process images 60,000 times faster than text. A good chart tells the whole story in 3 seconds.</p>
+## 🧠 Core Concept / Idea
+**Visual Efficiency.** 🟢 Humans process images 60,000 times faster than text. A good chart tells the whole story in 3 seconds.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Choose the Right Chart 🟢</h3>
-      <ul>
-        <li>Line Charts: For trends over time.</li>
-        <li>Bar Charts: For comparing categories.</li>
-        <li>Scatter Plots: For relationships between two things.</li>
-      </ul>
+### 1. Choose the Right Chart 🟢
+- Line Charts: For trends over time.
+- Bar Charts: For comparing categories.
+- Scatter Plots: For relationships between two things.
 
-      <h3>2. Less is More 🟢</h3>
-      <p>Avoid "Chart Junk". Remove unnecessary lines, backgrounds, and 3D effects. Let the data speak for itself.</p>
+### 2. Less is More 🟢
+Avoid "Chart Junk". Remove unnecessary lines, backgrounds, and 3D effects. Let the data speak for itself.
 
-      <h3>3. Color with Purpose 🟢</h3>
-      <p>Use color to highlight what matters. Don't use 10 colors just because they look pretty; use them to guide the viewer's eye.</p>
+### 3. Color with Purpose 🟢
+Use color to highlight what matters. Don't use 10 colors just because they look pretty; use them to guide the viewer's eye.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of a chart like a <strong>Traffic Sign</strong>. 🟢</p>
-      <p>A "Stop" sign is simple, clear, and uses color (Red) to tell you something vital instantly. Your data charts should be just as easy to understand at a glance.</p>
+## 🛠 Practical Understanding / Intuition
+Think of a chart like a **Traffic Sign**. 🟢
+A "Stop" sign is simple, clear, and uses color (Red) to tell you something vital instantly. Your data charts should be just as easy to understand at a glance.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>Charts can be <strong>Misleading</strong>. 🟢 Changing the scale of a graph can make a tiny change look like a huge disaster. Always be honest with your scales.</p>
+## ⚠️ Limitations or Challenges
+Charts can be **Misleading**. 🟢 Changing the scale of a graph can make a tiny change look like a huge disaster. Always be honest with your scales.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I used to try to make my charts look "complex" to seem smarter. 🟢 I learned that the most complex thing you can do is make something simple and clear.</p>
+## ✍️ Personal Learning / Reflection
+I used to try to make my charts look "complex" to seem smarter. 🟢 I learned that the most complex thing you can do is make something simple and clear.
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Simplify your visuals. 🟢 Before you share a chart, ask: "Can a stranger understand this in 5 seconds?" If not, keep trimming.</p>
-    `
+## 🎯 Conclusion / Takeaway
+Simplify your visuals. 🟢 Before you share a chart, ask: "Can a stranger understand this in 5 seconds?" If not, keep trimming.
+`
   },
   {
     slug: 'python-for-data-science',
@@ -1532,39 +1530,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['Data Science', 'Python', 'Libraries'],
     excerpt: 'Exploring Python libraries and tools essential for data science and analysis.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Python is the king of data science. 🟢 It has a massive library for every task, from cleaning messy data to training AI models.</p>
+## 🚀 Introduction / Context
+Python is the king of data science. 🟢 It has a massive library for every task, from cleaning messy data to training AI models.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Manually analyzing millions of data points in Excel is slow and prone to errors. 🟢 We need automation and mathematical power that scales with the data.</p>
+## ❗ Problem or Motivation
+Manually analyzing millions of data points in Excel is slow and prone to errors. 🟢 We need automation and mathematical power that scales with the data.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>The Ecosystem.</strong> 🟢 Python's strength isn't just the language, but the "Libraries"—pre-written code that handles the heavy lifting for you.</p>
+## 🧠 Core Concept / Idea
+**The Ecosystem.** 🟢 Python's strength isn't just the language, but the "Libraries"—pre-written code that handles the heavy lifting for you.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Pandas (The Master Table) 🟢</h3>
-      <p>Pandas is like Excel on steroids. It can filter, clean, and merge millions of rows in a fraction of a second.</p>
+### 1. Pandas (The Master Table) 🟢
+Pandas is like Excel on steroids. It can filter, clean, and merge millions of rows in a fraction of a second.
 
-      <h3>2. NumPy (The Engine) 🟢</h3>
-      <p>NumPy handles the complex math and large arrays that make AI and data analysis possible at high speeds.</p>
+### 2. NumPy (The Engine) 🟢
+NumPy handles the complex math and large arrays that make AI and data analysis possible at high speeds.
 
-      <h3>3. Scikit-Learn (The Toolkit) 🟢</h3>
-      <p>This is where the actual "science" happens—building models that can predict trends or classify data automatically.</p>
+### 3. Scikit-Learn (The Toolkit) 🟢
+This is where the actual "science" happens—building models that can predict trends or classify data automatically.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of Python libraries like <strong>Power Tools</strong>. 🟢</p>
-      <p>You can build a house with a hand saw (Excel), but if you have to build 100 houses, you want a circular saw and a nail gun (Python Libraries).</p>
+## 🛠 Practical Understanding / Intuition
+Think of Python libraries like **Power Tools**. 🟢
+You can build a house with a hand saw (Excel), but if you have to build 100 houses, you want a circular saw and a nail gun (Python Libraries).
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>The "Paradox of Choice". 🟢 There are so many libraries that it is easy to get overwhelmed. Focus on <strong>Pandas</strong> first; it is the most useful.</p>
+## ⚠️ Limitations or Challenges
+The "Paradox of Choice". 🟢 There are so many libraries that it is easy to get overwhelmed. Focus on **Pandas** first; it is the most useful.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I spent too much time trying to learn the math behind the tools. 🟢 Learn the <strong>tools</strong> first. Use them to solve real problems, and the math will start making sense later.</p>
+## ✍️ Personal Learning / Reflection
+I spent too much time trying to learn the math behind the tools. 🟢 Learn the **tools** first. Use them to solve real problems, and the math will start making sense later.
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Data science is about solving problems. 🟢 Start by importing a small CSV file of something you care about (like your spending) into a Pandas DataFrame.</p>
-    `
+## 🎯 Conclusion / Takeaway
+Data science is about solving problems. 🟢 Start by importing a small CSV file of something you care about (like your spending) into a Pandas DataFrame.
+`
   },
   {
     slug: 'understanding-neural-networks',
@@ -1574,39 +1572,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['AI', 'Deep Learning', 'Python'],
     excerpt: 'A beginner-friendly introduction to neural networks and deep learning concepts.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Neural networks are the "brain" of AI. 🟢 They are designed to mimic how human neurons fire to solve incredibly complex problems.</p>
+## 🚀 Introduction / Context
+Neural networks are the "brain" of AI. 🟢 They are designed to mimic how human neurons fire to solve incredibly complex problems.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Simple code is great for math, but terrible for things like "understanding a face". 🟢 Faces have too many variations for a human to write rules for.</p>
+## ❗ Problem or Motivation
+Simple code is great for math, but terrible for things like "understanding a face". 🟢 Faces have too many variations for a human to write rules for.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>Layers of Processing.</strong> 🟢 Information flows through layers of artificial neurons, with each layer finding more complex patterns than the last.</p>
+## 🧠 Core Concept / Idea
+**Layers of Processing.** 🟢 Information flows through layers of artificial neurons, with each layer finding more complex patterns than the last.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Input & Output 🟢</h3>
-      <p>The network takes raw data (like pixels) at one end and produces a result (like "Cat") at the other.</p>
+### 1. Input & Output 🟢
+The network takes raw data (like pixels) at one end and produces a result (like "Cat") at the other.
 
-      <h3>2. Hidden Layers 🟢</h3>
-      <p>This is the "Black Box". These middle layers find features like edges, then shapes, then objects, without being told what to look for.</p>
+### 2. Hidden Layers 🟢
+This is the "Black Box". These middle layers find features like edges, then shapes, then objects, without being told what to look for.
 
-      <h3>3. Training (Weights) 🟢</h3>
-      <p>Learning is just adjusting the "volume" (weights) of the connections between neurons until the correct answer comes out.</p>
+### 3. Training (Weights) 🟢
+Learning is just adjusting the "volume" (weights) of the connections between neurons until the correct answer comes out.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of it as a <strong>Committee of Experts</strong>. 🟢</p>
-      <p>The first committee looks for simple lines. The second committee combines those lines into shapes. The final expert looks at the shapes and decides if it's a cat.</p>
+## 🛠 Practical Understanding / Intuition
+Think of it as a **Committee of Experts**. 🟢
+The first committee looks for simple lines. The second committee combines those lines into shapes. The final expert looks at the shapes and decides if it's a cat.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>Neural networks are "Hungry". 🟢 They need massive amounts of data and huge computer power to learn effectively.</p>
+## ⚠️ Limitations or Challenges
+Neural networks are "Hungry". 🟢 They need massive amounts of data and huge computer power to learn effectively.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I used to think neural networks were "thinking". 🟢 They aren't. It's just massive amounts of very clever math. Realizing that made them much less intimidating.</p>
+## ✍️ Personal Learning / Reflection
+I used to think neural networks were "thinking". 🟢 They aren't. It's just massive amounts of very clever math. Realizing that made them much less intimidating.
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Deep learning is powerful but specific. 🟢 Don't use a neural network if a simple <code>if/else</code> or a basic chart can solve the problem.</p>
-    `
+## 🎯 Conclusion / Takeaway
+Deep learning is powerful but specific. 🟢 Don't use a neural network if a simple \`if/else\` or a basic chart can solve the problem.
+`
   },
   {
     slug: 'web-performance-optimization',
@@ -1616,39 +1614,39 @@ Stay consistent, keep pushing to GitHub, and never fear a mistake again!
     tags: ['React', 'Performance', 'Web Dev'],
     excerpt: 'Techniques and strategies to make your web applications faster and more efficient.',
     content: `
-      <h2>🚀 Introduction / Context</h2>
-      <p>Performance is the most important "feature" of any website. 🔵 If your site is slow, users will leave before they even see your content.</p>
+## 🚀 Introduction / Context
+Performance is the most important "feature" of any website. 🔵 If your site is slow, users will leave before they even see your content.
 
-      <h2>❗ Problem or Motivation</h2>
-      <p>Modern websites are heavy. 🔵 Large images and massive code files can make a site take 10 seconds to load on a mobile phone—that is too long.</p>
+## ❗ Problem or Motivation
+Modern websites are heavy. 🔵 Large images and massive code files can make a site take 10 seconds to load on a mobile phone—that is too long.
 
-      <h2>🧠 Core Concept / Idea</h2>
-      <p><strong>Perception vs Reality.</strong> 🔵 Making a site load faster is good, but making it <em>feel</em> fast (showing content early) is even more important.</p>
+## 🧠 Core Concept / Idea
+**Perception vs Reality.** 🔵 Making a site load faster is good, but making it *feel* fast (showing content early) is even more important.
 
-      <h2>🔑 Key Points or Observations</h2>
+## 🔑 Key Points or Observations
 
-      <h3>1. Image Compression 🔵</h3>
-      <p>Images are usually the biggest files. Modern formats like WebP can make them 80% smaller without losing quality.</p>
+### 1. Image Compression 🔵
+Images are usually the biggest files. Modern formats like WebP can make them 80% smaller without losing quality.
 
-      <h3>2. Lazy Loading 🔵</h3>
-      <p>Don't load what the user can't see. Only download images and code as the user scrolls down to them.</p>
+### 2. Lazy Loading 🔵
+Don't load what the user can't see. Only download images and code as the user scrolls down to them.
 
-      <h3>3. Minimize Code 🔵</h3>
-      <p>Bundlers like Vite can automatically remove unused code and shrink your files so they fly over the internet.</p>
+### 3. Minimize Code 🔵
+Bundlers like Vite can automatically remove unused code and shrink your files so they fly over the internet.
 
-      <h2>🛠 Practical Understanding / Intuition</h2>
-      <p>Think of your website as a <strong>Backpack</strong>. 🔵</p>
-      <p>If you put everything you own in the backpack, you'll walk very slowly. Performance optimization is about only packing exactly what you need for today's trip.</p>
+## 🛠 Practical Understanding / Intuition
+Think of your website as a **Backpack**. 🔵
+If you put everything you own in the backpack, you'll walk very slowly. Performance optimization is about only packing exactly what you need for today's trip.
 
-      <h2>⚠️ Limitations or Challenges</h2>
-      <p>There is a balance. 🔵 Sometimes adding complex optimization tools can actually make your code harder for other developers to read and maintain.</p>
+## ⚠️ Limitations or Challenges
+There is a balance. 🔵 Sometimes adding complex optimization tools can actually make your code harder for other developers to read and maintain.
 
-      <h2>✍️ Personal Learning / Reflection</h2>
-      <p>I used to ignore performance until I tried to load my own site on a bad 3G connection. 🔵 It was a wake-up call. Always test on "slow" devices!</p>
+## ✍️ Personal Learning / Reflection
+I used to ignore performance until I tried to load my own site on a bad 3G connection. 🔵 It was a wake-up call. Always test on "slow" devices!
 
-      <h2>🎯 Conclusion / Takeaway</h2>
-      <p>Start with the easy wins. 🔵 Compress your images today. It is the fastest way to make your site feel like a premium experience.</p>
-    `
+## 🎯 Conclusion / Takeaway
+Start with the easy wins. 🔵 Compress your images today. It is the fastest way to make your site feel like a premium experience.
+`
   }
 ];
 
