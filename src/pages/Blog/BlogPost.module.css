@@ -152,19 +152,41 @@
   border-radius: 12px;
   overflow-x: auto;
   margin: 1.5rem 0;
-  border: 1px solid var(--glass-border);
-  max-width: 100%;
+}
+
+/* ── Responsive Table Wrapper ── */
+.content div:has(> table) {
+  overflow-x: auto;
   -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+/* Scroll hint gradient on the right edge */
+.content div:has(> table)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to left, var(--bg-secondary), transparent);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 10px 10px 0;
 }
 
 .content table {
   width: 100%;
+  min-width: 500px;
   border-collapse: collapse;
-  margin: 1.5rem 0;
   display: table;
-  overflow-x: auto;
-  border: 1px solid var(--glass-border);
-  border-radius: 8px;
+  border: none;
+  font-size: 0.95rem;
 }
 
 .content thead {
@@ -173,22 +195,53 @@
 
 .content th,
 .content td {
-  padding: 0.75rem 1rem;
+  padding: 0.875rem 1.25rem;
   text-align: left;
   border: 1px solid var(--glass-border);
+  white-space: nowrap;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Let the topic/description column wrap, but not others */
+.content td:nth-child(3),
+.content th:nth-child(3) {
   white-space: normal;
-  word-wrap: break-word;
+  min-width: 200px;
+  word-break: break-word;
+}
+
+/* Number column — narrow, no wrap */
+.content td:first-child,
+.content th:first-child {
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Emoji column — fixed width */
+.content td:nth-child(2),
+.content th:nth-child(2) {
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Link/Go column — no wrap */
+.content td:last-child,
+.content th:last-child {
+  min-width: 60px;
+  text-align: center;
 }
 
 .content th {
   font-weight: 700;
   color: var(--text-primary);
-  font-size: 0.95em;
+  text-transform: uppercase;
+  font-size: 0.825rem;
+  letter-spacing: 0.5px;
 }
 
 .content td {
   color: var(--text-secondary);
-  font-size: 0.95em;
 }
 
 .content tbody tr:nth-child(even) {
@@ -199,18 +252,40 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
-/* Responsive table wrapper */
+/* ── Tablet (768px) ── */
 @media (max-width: 768px) {
+
+  /* Show scroll hint when table overflows */
+  .content div:has(> table)::after {
+    opacity: 1;
+  }
+
   .content table {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    min-width: 480px;
+    font-size: 0.9rem;
   }
 
   .content th,
   .content td {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.85em;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .content th {
+    font-size: 0.8rem;
+  }
+}
+
+/* ── Small Phone (320px-480px) ── */
+@media (max-width: 480px) {
+  .content table {
+    min-width: 420px;
+  }
+
+  .content th,
+  .content td {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
   }
 }
 
