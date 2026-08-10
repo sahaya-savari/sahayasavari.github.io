@@ -113,4 +113,10 @@ The application is deployed using **GitHub Pages** via a custom GitHub Actions w
 
 ## 📄 License
 
+The source code in this repository is licensed under the MIT License.
+
+Unless otherwise stated, the original articles, written content, and other
+creative content published in this repository are © 2026 Sahaya Savari F.
+and are not licensed under the MIT License.
+
 © 2026 Sahaya Savari F. All rights reserved.
