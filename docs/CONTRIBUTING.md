@@ -13,8 +13,8 @@ Welcome to the Sahaya Savari blog platform. To maintain strict visual standards,
 ### 2. Sandbox Setup
 ```bash
 # Clone the repository
-git clone https://github.com/sahaya-savari/sahaya-savari.github.io.git
-cd sahaya-savari.github.io
+git clone https://github.com/sahaya-savari/sahaya-savari-blog.git
+cd sahaya-savari-blog
 
 # Install dependency tree
 npm install
