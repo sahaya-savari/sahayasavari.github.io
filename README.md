@@ -111,8 +111,6 @@ The application is deployed using **GitHub Pages** via a custom GitHub Actions w
 
 ---
 
----
-
 ## 📄 License
 
 © 2026 Sahaya Savari F. All rights reserved.
