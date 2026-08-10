@@ -104,15 +104,10 @@ The application is deployed using **GitHub Pages** via a custom GitHub Actions w
 
 ---
 
-## ⭐ Star History
 
-<a href="https://www.star-history.com/?repos=sahaya-savari%2Fsahaya-savari-blog&type=date&logscale&legend=top-left">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=sahaya-savari/sahaya-savari-blog&type=date&theme=dark&logscale&legend=top-left&sealed_token=2UBl3e_cEk0-eo4bF0UuLxeg0329SxgIFrzotzQkwh62hOV_hxktrkASRTRsGrhxmucleBm7mrsIBkRshB-BLmQF0alMAW76JdjprIr9ZKj9F-UAReedAsKSw5FixadxREOjJhy4Uvr7aWfOU7gB8Q7HLw02k7XlWM4sv4ElETICVlJvn_NL-uxb4QyX" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=sahaya-savari/sahaya-savari-blog&type=date&logscale&legend=top-left&sealed_token=2UBl3e_cEk0-eo4bF0UuLxeg0329SxgIFrzotzQkwh62hOV_hxktrkASRTRsGrhxmucleBm7mrsIBkRshB-BLmQF0alMAW76JdjprIr9ZKj9F-UAReedAsKSw5FixadxREOjJhy4Uvr7aWfOU7gB8Q7HLw02k7XlWM4sv4ElETICVlJvn_NL-uxb4QyX" />
-   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=sahaya-savari/sahaya-savari-blog&type=date&logscale&legend=top-left&sealed_token=2UBl3e_cEk0-eo4bF0UuLxeg0329SxgIFrzotzQkwh62hOV_hxktrkASRTRsGrhxmucleBm7mrsIBkRshB-BLmQF0alMAW76JdjprIr9ZKj9F-UAReedAsKSw5FixadxREOjJhy4Uvr7aWfOU7gB8Q7HLw02k7XlWM4sv4ElETICVlJvn_NL-uxb4QyX" />
- </picture>
-</a>
+## ⭐ GitHub Stars
+
+[![GitHub stars](https://img.shields.io/github/stars/sahaya-savari/sahaya-savari-blog?style=for-the-badge)](https://github.com/sahaya-savari/sahaya-savari-blog)
 
 ---
 
