@@ -112,7 +112,7 @@ export default function PrivacyPolicy() {
             </ul>
             <p>
               To exercise any of these rights, please contact us at{' '}
-              <a href="mailto:info@nomadtome.com">info@nomadtome.com</a>.
+              <a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a>.
             </p>
 
             <h2>Changes to This Policy</h2>
@@ -127,7 +127,7 @@ export default function PrivacyPolicy() {
             <p>
               If you have any questions or concerns about this Privacy Policy or our data practices, please
               do not hesitate to reach out. You can email us at{' '}
-              <a href="mailto:info@nomadtome.com">info@nomadtome.com</a> or use the contact form on our
+              <a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a> or use the contact form on our
               Contact page. We are committed to addressing your inquiries promptly and transparently.
             </p>
           </motion.div>
