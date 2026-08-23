@@ -173,7 +173,7 @@ function postbuild() {
 
   const homeCrawlableHtml = `
     <header>
-      <h1>Sahaya Savari Developer Blog — AI &amp; Software Engineering Knowledge Hub</h1>
+      <h1>Technical Articles &amp; Engineering Insights | Sahaya Savari</h1>
       <nav>
         <a href="${baseUrl}/">Home</a> |
         <a href="${baseUrl}/blog">Blog</a> |
@@ -201,7 +201,7 @@ function postbuild() {
   `;
 
   let updatedHomeHtml = updateHeadMeta(baseHtmlTemplate, {
-    title: 'Sahaya Savari Developer Blog — AI & Software Engineering Knowledge Hub',
+    title: 'Technical Articles & Engineering Insights | Sahaya Savari',
     description: 'World-class technical articles on Artificial Intelligence, Python, React, DevOps, and Software Engineering Career Growth by Sahaya Savari F.',
     canonicalUrl: `${baseUrl}/`,
     imageUrl: `${baseUrl}/og-image.png`,
@@ -228,7 +228,7 @@ function postbuild() {
       path: 'contact',
       title: 'Contact — Sahaya Savari F',
       description: 'Get in touch with Sahaya Savari F for technical collaborations or inquiries.',
-      contentHtml: `<main><h1>Contact Sahaya Savari F</h1><p>Email: contact@sahayasavari.me</p></main>`,
+      contentHtml: `<main><h1>Contact Sahaya Savari F</h1><p>Email: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
     },
     {
       path: 'categories',
@@ -246,13 +246,13 @@ function postbuild() {
       path: 'privacy-policy',
       title: 'Privacy Policy — Sahaya Savari',
       description: 'Privacy Policy for Sahaya Savari Developer Blog.',
-      contentHtml: `<main><h1>Privacy Policy</h1></main>`,
+      contentHtml: `<main><h1>Privacy Policy</h1><p>For inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
     },
     {
       path: 'accessibility',
       title: 'Accessibility Statement — Sahaya Savari',
       description: 'Accessibility Statement for Sahaya Savari Developer Blog.',
-      contentHtml: `<main><h1>Accessibility Statement</h1></main>`,
+      contentHtml: `<main><h1>Accessibility Statement</h1><p>For accessibility inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
     },
   ];
 
