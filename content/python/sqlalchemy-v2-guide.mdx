@@ -64,7 +64,7 @@ async def init_and_test_db():
 
     async with AsyncSessionLocal() as session:
         async with session.begin():
-            new_user = User(username="sahaya_savari", email="contact@sahayasavari.me")
+            new_user = User(username="sahaya_savari", email="contact@sahayasavari.dev")
             session.add(new_user)
             await session.flush()
 

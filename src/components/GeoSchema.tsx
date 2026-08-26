@@ -20,7 +20,7 @@ export default function GeoSchema({ post, url, faqs }: GeoSchemaProps) {
     author: {
       '@type': 'Person',
       name: post.author || 'Sahaya Savari F',
-      url: 'https://sahayasavari.me',
+      url: 'https://sahayasavari.dev',
       jobTitle: 'AI Engineer & Full Stack Developer',
     },
     publisher: {

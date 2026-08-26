@@ -7,7 +7,7 @@ import GridBackground from '../components/GridBackground';
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/sahaya-savari' },
-  { icon: Globe, label: 'Portfolio', href: 'https://sahayasavari.me' },
+  { icon: Globe, label: 'Portfolio', href: 'https://sahayasavari.dev' },
   { icon: Linkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
 ];
 
@@ -71,8 +71,8 @@ export default function Contact() {
               </div>
               <div className="flex flex-col">
                 <span className="font-body text-sm font-semibold text-primary/60 uppercase">Email</span>
-                <a href="mailto:contact@sahayasavari.me" className="font-body text-body-lg font-bold text-primary hover:underline">
-                  contact@sahayasavari.me
+                <a href="mailto:contact@sahayasavari.dev" className="font-body text-body-lg font-bold text-primary hover:underline">
+                  contact@sahayasavari.dev
                 </a>
               </div>
             </div>
