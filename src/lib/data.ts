@@ -116,7 +116,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     "year": "2025",
     "title": "Technical Blog Launch",
-    "description": "Launched my personal learning blog blog.sahayasavari.dev to share practical tutorials with other students."
+    "description": "Launched my personal learning blog at blog.sahayasavari.dev to share practical tutorials with other students."
   },
   {
     "year": "2026",
