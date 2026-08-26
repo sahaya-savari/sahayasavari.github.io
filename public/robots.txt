@@ -3,4 +3,4 @@ Allow: /
 Disallow: /privacy-policy
 Disallow: /accessibility
 
-Sitemap: https://blog.sahayasavari.me/sitemap.xml
+Sitemap: https://blog.sahayasavari.dev/sitemap.xml

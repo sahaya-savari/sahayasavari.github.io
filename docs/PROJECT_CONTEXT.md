@@ -10,7 +10,7 @@ This document serves as a comprehensive, production-grade documentation of the *
 - **Purpose:** A high-fidelity, high-performance personal learning blog and professional portfolio website sharing practical guides on Python, Databases, Git, and Web Development.
 - **Author:** Sahaya Savari F
 - **Tech Stack:** React 18, TypeScript, Vite, Tailwind CSS, Framer Motion, Lucide React, React Router DOM v6.
-- **Deployment Platform:** GitHub Pages (custom domain: `blog.sahayasavari.me`).
+- **Deployment Platform:** GitHub Pages (custom domain: `blog.sahayasavari.dev`).
 - **Repository Purpose:** Compile and serve static built assets of the React application via automated workflows.
 
 ---
@@ -46,7 +46,7 @@ D:\GITHUB\BLOG
 │       └── deploy.yml          # GitHub Actions build-and-deployment workflow pipeline
 ├── public/                     # Static assets copied directly to the build output (dist/)
 │   ├── 404.html                # Intercepts SPA sub-paths and encodes paths to query parameters
-│   ├── CNAME                   # Maps custom domain blog.sahayasavari.me
+│   ├── CNAME                   # Maps custom domain blog.sahayasavari.dev
 │   ├── robots.txt              # Standard web crawler rules
 │   └── sitemap.xml             # Search engine crawler index XML
 ├── src/                        # React application source code root
@@ -111,11 +111,11 @@ D:\GITHUB\BLOG
 
 ## 7. Domain Setup
 
-- **Custom Domain:** `blog.sahayasavari.me`
+- **Custom Domain:** `blog.sahayasavari.dev`
 - **DNS Routing:** Configure DNS settings at the domain registrar:
   - Add a **CNAME** record for the host `blog` pointing to the GitHub Pages domain `sahaya-savari.github.io`.
 - **Repository Linkage:**
-  - The repository root includes [CNAME](file:///D:/GITHUB/blog/CNAME) (and `public/CNAME`) containing `blog.sahayasavari.me`. 
+  - The repository root includes [CNAME](file:///D:/GITHUB/blog/CNAME) (and `public/CNAME`) containing `blog.sahayasavari.dev`.
   - This ensures that when GitHub Pages deploys, it binds the static assets to the custom domain.
   - The source builder settings under "Settings > Pages" in GitHub must be configured to deploy from **GitHub Actions** rather than a static branch.
 
@@ -127,7 +127,7 @@ The site implements a robust, programmatic SEO system. Do not modify or drop the
 
 ### HTML Meta Tags (`index.html`)
 The `<head>` of [index.html](file:///D:/GITHUB/blog/index.html) defines:
-- **Canonical URL:** `<link rel="canonical" href="https://blog.sahayasavari.me" />`
+- **Canonical URL:** `<link rel="canonical" href="https://blog.sahayasavari.dev" />`
 - **Open Graph (OG) Tags:** Custom title, description, URL, and image tags.
 - **Twitter Cards:** Optimized for summary-large-image cards.
 - **Structured Data:** Schema markup utilizing JSON-LD format declaring the site as a `Blog` written by the author:
@@ -136,7 +136,7 @@ The `<head>` of [index.html](file:///D:/GITHUB/blog/index.html) defines:
     "@context": "https://schema.org",
     "@type": "Blog",
     "name": "Sahaya Savari",
-    "url": "https://blog.sahayasavari.me",
+    "url": "https://blog.sahayasavari.dev",
     "author": {
       "@type": "Person",
       "name": "Sahaya Savari F"

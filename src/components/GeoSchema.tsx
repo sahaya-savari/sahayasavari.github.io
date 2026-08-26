@@ -7,7 +7,7 @@ interface GeoSchemaProps {
 }
 
 export default function GeoSchema({ post, url, faqs }: GeoSchemaProps) {
-  const siteUrl = 'https://blog.sahayasavari.me';
+  const siteUrl = 'https://blog.sahayasavari.dev';
 
   const articleSchema = {
     '@context': 'https://schema.org',

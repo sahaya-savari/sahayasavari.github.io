@@ -98,7 +98,7 @@ npm run preview
 The application is deployed using **GitHub Pages** via a custom GitHub Actions workflow:
 - The pipeline configuration is stored in `.github/workflows/deploy.yml`.
 - Pushes to the `main` branch trigger a deployment run automatically.
-- Built files inside `dist/` are served under the custom domain `blog.sahayasavari.me`.
+- Built files inside `dist/` are served under the custom domain `blog.sahayasavari.dev`.
 
 *Note: Ensure the repository settings have Pages configured to build and deploy from **GitHub Actions**.*
 

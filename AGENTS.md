@@ -11,7 +11,7 @@ This document is the operating guide for AI agents working on this repository. E
 - **Tech stack:** React 18, TypeScript (strict), Vite 5, Tailwind CSS 3, Framer Motion, Lucide React, React Router DOM 6, and MDX (`@mdx-js/rollup` + `@mdx-js/react`).
 - **Build tool:** Vite (`vite build`, preceded by `tsc -b` for type checking).
 - **Package manager:** npm (a `package-lock.json` is committed).
-- **Deployment method:** GitHub Pages via a GitHub Actions workflow (`.github/workflows/deploy.yml`), served on the custom domain `blog.sahayasavari.me` (see `CNAME` and `public/CNAME`).
+- **Deployment method:** GitHub Pages via a GitHub Actions workflow (`.github/workflows/deploy.yml`), served on the custom domain `blog.sahayasavari.dev` (see `CNAME` and `public/CNAME`).
 - **Repository structure:** A single-page React application. Blog content lives as MDX files under `content/`; built static assets are deployed from `dist/`.
 
 ---
