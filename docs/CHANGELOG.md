@@ -13,7 +13,7 @@ All notable changes to this project will be documented in this file. This projec
 - Documented full repository guidelines across `AGENTS.md`, `ARCHITECTURE.md`, `CONTRIBUTING.md`, `CHANGELOG.md`, `ROADMAP.md`, `DECISIONS.md`, and `SECURITY.md`.
 
 ### Fixed
-- Fixed blank blog page loads on the live custom domain `blog.sahayasavari.me` caused by serving uncompiled TSX files from the source branch root.
+- Fixed blank blog page loads on the live custom domain caused by serving uncompiled TSX files from the source branch root.
 - Restored `robots.txt` and `sitemap.xml` accessibility at the root domain level.
 
 ---

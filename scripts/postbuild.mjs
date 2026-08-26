@@ -228,7 +228,7 @@ function postbuild() {
       path: 'contact',
       title: 'Contact — Sahaya Savari F',
       description: 'Get in touch with Sahaya Savari F for technical collaborations or inquiries.',
-      contentHtml: `<main><h1>Contact Sahaya Savari F</h1><p>Email: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
+      contentHtml: `<main><h1>Contact Sahaya Savari F</h1><p>Email: <!--email_off--><a href="mailto:contact@sahayasavari.dev">contact@sahayasavari.dev</a><!--/email_off--></p></main>`,
     },
     {
       path: 'categories',
@@ -246,13 +246,13 @@ function postbuild() {
       path: 'privacy-policy',
       title: 'Privacy Policy — Sahaya Savari',
       description: 'Privacy Policy for Sahaya Savari Developer Blog.',
-      contentHtml: `<main><h1>Privacy Policy</h1><p>For inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
+      contentHtml: `<main><h1>Privacy Policy</h1><p>For inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.dev">contact@sahayasavari.dev</a><!--/email_off--></p></main>`,
     },
     {
       path: 'accessibility',
       title: 'Accessibility Statement — Sahaya Savari',
       description: 'Accessibility Statement for Sahaya Savari Developer Blog.',
-      contentHtml: `<main><h1>Accessibility Statement</h1><p>For accessibility inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a><!--/email_off--></p></main>`,
+      contentHtml: `<main><h1>Accessibility Statement</h1><p>For accessibility inquiries: <!--email_off--><a href="mailto:contact@sahayasavari.dev">contact@sahayasavari.dev</a><!--/email_off--></p></main>`,
     },
   ];
 

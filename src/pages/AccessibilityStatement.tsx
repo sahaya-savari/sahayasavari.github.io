@@ -96,7 +96,7 @@ export default function AccessibilityStatement() {
             <h2>Contact</h2>
             <p>
               For accessibility-related questions or concerns, please contact us at{' '}
-              <a href="mailto:contact@sahayasavari.me">contact@sahayasavari.me</a>. We are committed to responding to
+              <a href="mailto:contact@sahayasavari.dev">contact@sahayasavari.dev</a>. We are committed to responding to
               accessibility inquiries within two business days and working with you to resolve any issues
               as quickly as possible.
             </p>

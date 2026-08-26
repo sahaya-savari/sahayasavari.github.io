@@ -17,7 +17,7 @@ const exploreLinks = [
 
 const socialLinks = [
   { icon: Github, label: 'GitHub', href: 'https://github.com/sahaya-savari' },
-  { icon: Globe, label: 'Portfolio', href: 'https://sahayasavari.me' },
+  { icon: Globe, label: 'Portfolio', href: 'https://sahayasavari.dev' },
   { icon: Facebook, label: 'Facebook', href: 'https://facebook.com' },
   { icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
   { icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
@@ -105,11 +105,11 @@ export default function Footer() {
             </h3>
 
             <a
-              href="mailto:contact@sahayasavari.me"
+              href="mailto:contact@sahayasavari.dev"
               className="flex items-center gap-2 font-body text-sm text-white/70 hover:text-white transition-colors group w-fit max-w-full min-h-[44px] break-all"
             >
               <Mail className="w-4 h-4 flex-shrink-0 group-hover:text-gold transition-colors" aria-hidden="true" />
-              contact@sahayasavari.me
+              contact@sahayasavari.dev
             </a>
 
             <p className="font-body text-sm text-white/50">
