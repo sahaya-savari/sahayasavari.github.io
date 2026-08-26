@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.sahayasavari.me/</loc>
+    <loc>https://blog.sahayasavari.dev/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog</loc>
+    <loc>https://blog.sahayasavari.dev/blog</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/about</loc>
+    <loc>https://blog.sahayasavari.dev/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/contact</loc>
+    <loc>https://blog.sahayasavari.dev/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/categories</loc>
+    <loc>https://blog.sahayasavari.dev/categories</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/newsletter</loc>
+    <loc>https://blog.sahayasavari.dev/newsletter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/python-foundations-part-1</loc>
+    <loc>https://blog.sahayasavari.dev/blog/python-foundations-part-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/github-guide-for-beginners</loc>
+    <loc>https://blog.sahayasavari.dev/blog/github-guide-for-beginners</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/how-to-learn-programming</loc>
+    <loc>https://blog.sahayasavari.dev/blog/how-to-learn-programming</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/getting-started-with-react</loc>
+    <loc>https://blog.sahayasavari.dev/blog/getting-started-with-react</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/machine-learning-basics</loc>
+    <loc>https://blog.sahayasavari.dev/blog/machine-learning-basics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/data-visualization-tips</loc>
+    <loc>https://blog.sahayasavari.dev/blog/data-visualization-tips</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/python-for-data-science</loc>
+    <loc>https://blog.sahayasavari.dev/blog/python-for-data-science</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/understanding-neural-networks</loc>
+    <loc>https://blog.sahayasavari.dev/blog/understanding-neural-networks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://blog.sahayasavari.me/blog/web-performance-optimization</loc>
+    <loc>https://blog.sahayasavari.dev/blog/web-performance-optimization</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -29,7 +29,7 @@ D:\GITHUB\BLOG
 │       └── deploy.yml          # GitHub Actions build and deploy pipeline configuration
 ├── public/                     # Static files directly copied into build output (dist/)
 │   ├── 404.html                # Intercepts SPA sub-paths and encodes paths to query parameters
-│   ├── CNAME                   # Maps custom domain blog.sahayasavari.me
+│   ├── CNAME                   # Maps custom domain blog.sahayasavari.dev
 │   ├── robots.txt              # Standard web crawler rules
 │   └── sitemap.xml             # Search engine crawler index XML
 ├── src/                        # React source code root
@@ -123,4 +123,4 @@ Deployments are strictly automated:
 1. Every commit pushed to `main` triggers a GitHub Actions runner (`deploy.yml`).
 2. The runner checks out code, runs `npm install`, runs `npm run build`, and generates the compiled output in `dist/`.
 3. The build artifact is uploaded and deployed to GitHub Pages.
-4. Custom domain `blog.sahayasavari.me` is mapped automatically via the static `CNAME` file.
+4. Custom domain `blog.sahayasavari.dev` is mapped automatically via the static `CNAME` file.

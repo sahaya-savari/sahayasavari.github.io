@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 const distDir = path.join(projectRoot, 'dist');
 const contentDir = path.join(projectRoot, 'content');
-const baseUrl = 'https://blog.sahayasavari.me';
+const baseUrl = 'https://blog.sahayasavari.dev';
 
 // Helper to parse YAML frontmatter from MDX files
 function parseFrontmatter(fileContent) {

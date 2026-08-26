@@ -580,7 +580,7 @@ export default function BlogDetails() {
   return (
     <article className="bg-background overflow-x-hidden">
       <ReadingProgress />
-      <GeoSchema post={post} url={shareUrl || `https://blog.sahayasavari.me/blog/${slug}`} />
+      <GeoSchema post={post} url={shareUrl || `https://blog.sahayasavari.dev/blog/${slug}`} />
 
       {/* ── Hero Image ── */}
       <div
